@@ -1,0 +1,84 @@
+.footer {
+    color: $white;
+    &Box {
+        @include pad {
+            padding: 0 $text-2xl;
+        }
+        @include mobile {
+            padding: 0 13.5px;
+        }
+    }
+    &Top {
+        display: flex;
+        justify-content: space-between;
+        @include mobile {
+            display: block;
+        }
+    }
+    &List {
+        a {
+            color: $white;
+        }
+    }
+    &Contact {
+        &Link {
+            img {
+                width: $text-4xl;
+                height: $text-4xl;
+                @include mobile {
+                    width: $text-l;
+                    height: $text-l;
+                }
+            }
+            a {
+                font-size: $text-2xl;
+                font-family: 'Noto Sans TC', sans-serif;
+                color: $white;
+                @include mobile {
+                    font-size: $text-base;
+                }
+            }
+        }
+    }
+    &Social {
+        &Item {
+            img {
+                width: $text-4xl;
+                height: $text-4xl;
+                @include pad {
+                    width: $text-3xl;
+                    height: $text-3xl;
+                }
+                @include mobile {
+                    width: $text-l;
+                    height: $text-l;
+                }
+            }
+        }
+    }
+    &Copyright {
+        padding: $text-xl 0;
+        @include pad {
+            padding-bottom: $text-3xl;
+        }
+        @include mobile {
+            padding-top: 16px;
+            padding-bottom: $text-l;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+    &Privacy {
+        a {
+            font-size: $text-s;
+            color: $white;
+        }
+    }
+}
+
+.whiteLine {
+    border: 1px solid $white;
+    opacity: 1;
+    margin: 0;
+}

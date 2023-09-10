@@ -1,0 +1,55 @@
+.contact {
+    background: radial-gradient(50% 50% at 50% 50%, #28085C 0%, #000 100%);
+    color: $white;
+    &Title {
+        h2 {
+            font-size: 64px;
+            letter-spacing: 64px;
+            padding-top: 160px;
+        }
+    }
+    &Content {
+        padding-bottom: 160px;
+    }
+    &Bar {
+        padding: 48px 0;
+        &Item {
+            padding-left: 73px;
+        }
+    }
+    &Choose {
+        padding-bottom: 120px;
+        h2 {
+            font-size: 64px;
+            letter-spacing: 64px;
+            padding-top: 160px;
+        }
+        h3 {
+            font-size: 48px;
+        }
+        &Item {
+            width: 72.292%;
+            height: 232px;
+            h3 {
+                color: $white;
+                font-size: 64px;
+            }
+        }
+        &Item1 {
+            background: url(../images/horizontal/diane_horizontal.png) no-repeat;
+            background-size: cover;
+        }
+        &Item2 {
+            background: url(../images/horizontal/felix_horizontal.png) no-repeat;
+            background-size: cover;
+        }
+        &Item3 {
+            background: url(../images/horizontal/karina_horizontal.png) no-repeat;
+            background-size: cover;
+        }
+        &Item4 {
+            background: url(../images/horizontal/vito_horizontal.png) no-repeat;
+            background-size: cover;
+        }
+    }
+}

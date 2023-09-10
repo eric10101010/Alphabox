@@ -1,0 +1,25 @@
+.newsDetail {
+    background: radial-gradient(50% 50% at 50% 50%, #28085C 0%, #000 100%);
+    color: $white;
+    h2 {
+        font-size: 48px;
+        padding-top: 160px;
+        letter-spacing: 48px;
+    }
+    &Content {
+        h3 {
+            font-size: 20px;
+            letter-spacing: 20px;
+        }
+        h4 {
+            letter-spacing: 16px;
+        }
+    }
+    &Arrow {
+        padding-bottom: 120px;
+        p {
+            font-size: 14px;
+            letter-spacing: 14px;
+        }
+    }
+}

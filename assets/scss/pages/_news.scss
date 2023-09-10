@@ -1,0 +1,17 @@
+.news {
+    background: radial-gradient(50% 50% at 50% 50%, #28085C 0%, #000 100%);
+    color: $white;
+    h2 {
+        font-size: 48px;
+        padding-top: 160px;
+        padding-bottom: 60px;
+    }
+    &List {
+        margin-bottom: 60px;
+    }
+    &Item {
+        h3 {
+            font-size: 128px;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.about {
+    &Banner {
+        background: radial-gradient(50% 50% at 50% 50%, #300871 0%, #000 100%);
+        color: $white;
+        h2 {
+            padding-top: 160px;
+            font-size: 48px;
+        }
+        &Back {
+            background: url(../images/about_us.png) no-repeat;
+            background-size: cover;
+            height: 280px;
+        }
+        &Text {
+            padding-bottom: 36px;
+        }
+        &Footer {
+            p {
+                padding-top: 60px;
+                padding-bottom: 172px;
+            }
+        }
+    }
+    &Content {
+        max-width: 1760px;
+        margin: 0 auto;
+        &List {
+            display: flex;
+            column-gap: 40px;
+        }
+        &Text {
+            border-bottom: 12px solid #000;
+            padding-bottom: 24px;
+            h2 {
+                font-size: 96px;
+                letter-spacing: 96px;
+            }
+        }
+        &Left {
+            width: 758px;
+        }
+        &Right {
+            width: 580px;
+        }
+    }
+    &Footer {
+        &List {
+            margin: 160px 0;
+        }
+    }
+}

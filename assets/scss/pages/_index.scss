@@ -1,0 +1,290 @@
+.intro {
+  background: radial-gradient(50% 50.00% at 50% 50.00%, #28085C 0%, #000 100%);
+}
+.index {
+  &Banner {
+    background: url(../images/home_background.png) no-repeat 50% 50%;
+    height: 880px;
+    img {
+      width: 196px;
+      height: 196px;
+    }
+    h3 {
+      color: #FFFFFF;
+    }
+    &List {
+      max-width: 1920px;
+      margin: 0 auto;
+    }
+    &Circle {
+      width: 864px;
+    }
+    &Text {
+      width: 864px;
+      position: absolute;
+      top: 36px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #FFF;
+      h2 {
+        font-size: 32px;
+        letter-spacing: 80px;
+      }
+      h3 {
+        letter-spacing: 16px;
+      }
+    }
+    &Item {
+      width: 416px;
+      background-size: cover;
+      h4 {
+        font-size: 32px;
+        color: #FFF;
+      }
+    }
+    &Item1 {
+      background-image: url(../images/diane.png);
+      height: 676px;
+    }
+    &Item2 {
+      background-image: url(../images/felix.png);
+      height: 580px;
+    }
+    &Item3 {
+      background-image: url(../images/karina.png);
+      height: 580px;
+    }
+    &Item4 {
+      background-image: url(../images/vito.png);
+      height: 676px;
+    }
+    &Line {
+      width: 100%;
+      height: 40px;
+      background-color: red;
+      z-index: 100;
+    }
+  }
+  &About {
+      background-image: url(../images/carousel_background.png);
+      background-size: 50%;
+      background-repeat: no-repeat;
+      height: 1089px;
+    &Back {
+      max-width: 1920px;
+      padding: 0 80px;
+      margin: 0 auto;
+    }
+    &Title {
+      h2 {
+        padding-top: 192px;
+        font-size: 48px;
+        color: #FFF;
+        letter-spacing: 48px;
+      }
+    }
+    &Card {
+      background-image: url(../images/carousel.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 1296px;
+      height: 560px;
+      color: #FFFFFF;
+      padding-right: 40px;
+      h3 {
+        font-size: 96px;
+      }
+      h4 {
+        font-size: 32px;
+        letter-spacing: 32px;
+      }
+    }
+  }
+  &News {
+    color: #FFFFFF;
+    &Header {
+      h2 {
+        padding-top: 160px;
+        font-size: 48px;
+        letter-spacing: 48px;
+      }
+    }
+    &Content {
+      h3 {
+        font-size: 20px;
+        letter-spacing: 20px;
+      }
+      h4 {
+        letter-spacing: 16px;
+      }
+    }
+    &Btn {
+      margin-top: 76px;
+      margin-bottom: 96px;
+      a {
+        background-image: url(../images/circle-noDot.png);
+        background-size: cover;
+        height: 132px;
+        width: 132px;
+        background-repeat: no-repeat;
+        color: #FFFFFF;
+      }
+    }
+  }
+  &Use {
+    background: radial-gradient(50% 50% at 50% 50%, #000 0%, #28085C 100%);
+    color: $white;
+    &Title {
+      padding-top: 160px;
+      h2 {
+        font-size: 48px;
+        letter-spacing: 48px;
+        padding-right: 214px;
+      }    
+    }
+    &Item {
+      padding: 40px;
+      cursor: pointer;
+      p {
+        padding-bottom: 160px;
+      }
+    }
+    &DotS {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+    }
+    &DotM {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+    }
+  }
+  &Contact {
+    background-color: #1F0F39;
+    height: 622px;
+    color: #FFF;
+    &Dot {
+      border-radius: 50%;
+      background-color: #FFF;
+      width: 12px;
+      height: 12px;
+    }
+    &List {
+      padding-top: 144px;
+    }
+    &Title {
+      width: 336px;
+      h2 {
+        font-size: 48px;
+        letter-spacing: 48px;
+        padding-bottom: 20px;
+      }
+      span {
+        font-size: 48px;
+      }
+    }
+    &Line {
+      width: 124px;
+      height: 12px;
+      background-color: #FFF;
+      border-radius: 50px;
+    }
+    &Text {
+      padding-top: 54px;
+    }
+    &Btn {
+      width: 416px;
+    }
+
+  }
+  &Product {
+    color: $white;
+    &Item {
+      position: relative; 
+      background-blend-mode: darken;
+      background-size: cover;
+      background-position: center;
+      transition: all 1s;
+      width: 25%;
+      height: 876px;
+      background-color: rgba(0, 0, 0, 0.5);
+      a {
+        color: $white;
+      }
+      h2 {
+        font-size: 400px;
+      }
+      h3 {
+        font-size: 32px;
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 1);
+        opacity: 1;
+        transition: opacity 1s; 
+        pointer-events: none;
+      }
+      &:hover:before {
+        opacity: 0; 
+      }
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+    }
+    &Item1 {
+      background: url(../images/diane_vertical.png) no-repeat 50% 0;
+      background-size: cover;
+      height: 876px;
+    }
+    &Item2 {
+      background: url(../images/felix_vertical.png) no-repeat 50% 0;
+      background-size: cover;
+      height: 876px;
+    }
+    &Item3 {
+      background: url(../images/karina_verticalgle.png) no-repeat 50% 0;
+      background-size: cover;
+      height: 876px;
+    }
+    &Item4 {
+      background: url(../images/vito_vertical.png) no-repeat 50% 0;
+      background-size: cover;
+      height: 876px;
+    }
+  }
+}
+
+
+.radialToLight{
+  background: radial-gradient(50% 50.00% at 50% 50.00%, #28085C 0%, #000 100%);
+}
+
+.swiperAbout {
+  overflow-x: hidden;
+}
+.swiper-scrollbar-drag {
+  background-color: $white;
+}
+.swiper-scrollbar {
+  height: 300px;
+}
+.fs-80 {
+  font-size: 80px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: #fff;
+  position: initial;
+  margin-top: 0;
+  width: auto;
+  height: auto;
+  &::after {
+    content: '';
+  }
+}

@@ -1,0 +1,50 @@
+.shop {
+    &Store {
+        margin-top: $text-3xl;
+        @include mobile {
+            margin-top: $text-l;
+        }
+        &List {
+            margin-bottom: 80px;
+            @include mobile {
+                margin-bottom: $text-5xl;
+            }
+            @include pad {
+                padding: 0px $text-l;
+            }
+            @include mobile {
+                padding: 0 13.5px;
+                margin-bottom: $text-5xl;
+            }
+        }
+        &Card {
+            @include mobile {
+                padding: 0;
+            }
+            img {
+                height: 224px;
+            }
+            h4 {
+                font-size: $text-l;
+                padding: 8px $text-l;
+                outline: 1px solid #00000020;
+            }
+        }
+        &Body {
+            width: 100%;
+            outline: 1px solid #00000020;
+            p{
+                font-size: $text-m;
+            }
+        }
+        &Btn {
+            a {
+                background-color: $black;
+                color: $white;
+                text-align: center;
+                font-size: 19px;
+                padding: $text-base 0;
+            }
+        }
+    }
+}

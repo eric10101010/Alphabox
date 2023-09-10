@@ -1,0 +1,164 @@
+// Blog導覽列 
+.blogNav {
+    background-color: $secondary;
+    a {
+        font-size: $text-m;
+        color: $white;
+        @include mobile {
+            font-size: $text-base;
+        }
+    }
+    &List {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 56px;
+        @include pad {
+            padding: 0 $text-2xl;
+        }
+        @include mobile {
+            padding: 0 13.5px;
+        }
+    }
+    &Icon {
+        img {
+            width: $text-3xl;
+            height: $text-3xl;
+        }
+    }
+}
+//  頁面
+.page {
+    a {
+        color: #555555;
+        padding: 12px 16px;
+        @include mobile {
+            width: $text-3xl;
+        }
+        &:hover {
+            background-color: $dark;
+            color: $white;
+            transition: .4s;
+        }
+    }
+    &List {
+        @include pad {
+            padding: 0 $text-l;
+        }
+        @include mobile {
+            padding: 0 13.5px;
+        }
+    }
+    &Item {
+        outline: 1px solid #555555;;
+    }
+    &Active {
+        background-color: $dark;
+        a {
+            color: $white;
+        }
+    }
+    &NextBtn {
+        a {
+            background-color: #F2F2F2;
+        }
+    }
+    &PrevBtn , &NextBtn {
+        a {
+            @include mobile {
+                width: 75px;
+                padding: 11.5px 13.5px 11.5px 13.5px;
+            }
+        }
+    }
+}
+//  麵包屑
+.breadcrumb {
+    &Item {
+        a {
+            color:$dark;
+        }
+    }
+}
+// 分隔線
+.borderGary {
+    color: #707070;
+    opacity: 1;
+    margin: 0;
+    @include mobile {
+        display: none;
+    }
+}
+.borderLine {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 205px;
+    outline: 1px solid #DEE2E6;
+    box-shadow: 0px 2px 6px #00000029;
+    border-radius: 0px 0px 4px 4px;
+}
+// 共用大標題
+.common {
+    &Title {
+        margin-top: 96px;
+        @include pad {
+            margin-top: 80px;
+            padding: 0 36px;
+        }
+        @include mobile {
+            margin-top: 40px;
+            padding: 0 13.5px;
+        }
+        h2 {
+            font-size: 48px;
+            font-weight: bold;
+            border-left: 8px solid $primary;
+            @include mobile {
+                font-size: 24px;
+                margin-bottom: 24px;
+            }
+        }
+        select {
+            font-size: 18px;
+        }
+    }
+    &Menu {
+        h3 {
+            font-size: 24px;
+            @include mobile {
+                font-size: 16px;
+            }
+        }
+        select {
+            padding: 6px 12px;
+            width: 304px;
+            height: 38px;
+            outline: 1px solid #CED4DA;
+            color: #495057;
+            @include mobile {
+                width: 276px;
+            }
+        }
+    }
+}
+//翻轉圖片
+.photoRevese {
+    transform: rotateY(180deg);
+}
+.contactCheckBtn {
+    margin: 0 auto;
+    a {
+        padding: 16px 0;
+        text-align: center;
+        width: 416px;
+        background-color: $primary;
+        color: $white;
+        @include pad {
+        width: 336px;
+        }
+        @include mobile {
+        width: 348px;
+        }
+    }
+} 

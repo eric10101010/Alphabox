@@ -1,0 +1,22 @@
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "./helpers/variables";
+@import "./helpers/mixin";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./config/_reset";
+@import "./config/base";
+
+@import './variable';
+@import './layout/header';
+@import './layout/footer';
+
+@import "./helpers/utilities";
+@import './pages/index';
+@import './pages/about';
+@import './pages/news';
+@import './pages/newsDetail';
+@import './pages/contact';
+@import './pages/faq';
+

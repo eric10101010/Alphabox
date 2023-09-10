@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Castoro&family=Noto+Sans+TC:wght@300;400;500&family=Roboto:ital,wght@0,400;1,400;1,500&display=swap');
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body {
+    font-family:'Roboto', 'Noto Sans TC', sans-serif;
+    font-size: $font-size-base;
+    line-height: 1.5;
+    // margin: 0;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+.container {
+    max-width: 1320px;
+    padding: 0 12px;
+    margin: 0 auto;
+    @include pad {
+        padding: 0px;
+    }
+}

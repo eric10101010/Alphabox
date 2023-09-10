@@ -1,0 +1,145 @@
+.optical {
+    &Banner {
+        &One ,&Two, &Three, &Four {
+            height: 296px;
+            background-size: cover;
+            @include mobile {
+                height: 136px;
+            }
+        }
+        &One {
+            background-image: url(../images/product-header-1.png);
+            @include pad {
+                background-image: url(../images/product-header-sm-1.png)
+            }
+        }
+        &Two {
+            background-image: url(../images/product-header-2.png);
+            @include pad {
+                background-image: url(../images/product-header-sm-2.png);
+            }
+        }
+        &Three {
+            background-image: url(../images/product-header-3.png);
+            @include pad {
+                background-image: url(../images/product-header-sm-3.png);
+            }
+        }
+        &Four {
+            background-image: url(../images/product-header-4.png);
+            @include pad {
+                background-image: url(../images/product-header-sm-4.png);
+            }
+        }
+    }
+    &List {
+        &Item {
+            text-align: center;
+            outline: 1px solid #DCDCDC;
+            padding: $text-l 0px;
+            @include mobile {
+                padding: $text-base 0;
+            }
+            &:hover{
+                border-bottom: 8px solid $primary;
+                transition: .5s;
+                h2 {
+                    opacity: .3;
+                    transition: .3s;
+                }
+            }
+            h2 {
+                color: #000000;
+                font-size: $text-xl;
+                font-weight: bold;
+                @include pad {
+                    font-size: $text-l;
+                }
+                @include mobile {
+                    font-size: $text-base;
+                }
+            }
+        }
+    }
+    &Title {
+        text-align: center;
+        h3 {
+            font-size: 42px;
+            font-weight: bold;
+            @include mobile {
+                font-size: $text-l;
+            }
+        }
+        h4 {
+            font-size: $text-xl;
+            @include mobile {
+                font-size: $text-l;
+            }
+        }
+    }
+    &Product {
+        margin-bottom: 80px;
+        @include mobile {
+            margin-bottom: $text-5xl;
+        }
+        &List {
+            @include pad {
+                margin-right: 0;
+                margin-left: 0;
+                padding: 0 $text-l;
+            }
+            @include mobile {
+                padding: 0 13.5px;
+            }
+            img {
+                width: 100%;
+                @include mobile {
+                    height: 168px;
+                }
+            }
+        }
+        &Card {
+            margin-bottom: 80px;
+            @include pad {
+                margin-bottom: $text-3xl;
+            }
+            @include mobile {
+                padding-left: 0;
+                padding-right: 0;
+                margin-bottom: $text-l;
+            }
+            img {
+                height: 168px;
+                @include pad {
+                    height: 224px;
+                }
+                @include mobile {
+                    height: 168px;
+                }
+            }
+        }
+        &Text {
+            font-size: $text-l;
+            p {
+                color: $primary;
+                font-weight: bold;
+            }
+        }
+        &One {
+            width: $text-l;
+            height: $text-l;
+            border-radius: 4px;
+            background-color: #5F3E2D;
+        }
+        &Two {
+            width: $text-l;
+            height: $text-l;
+            border-radius: 4px;
+            background-color: #B75929;
+        }
+    }
+}
+
+.menuActive {
+    border-bottom: 8px solid #AA0601;
+}
