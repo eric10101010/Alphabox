@@ -1,4 +1,5 @@
 import './assets/scss/all.scss';
+import './node_modules/bootstrap/dist/js/bootstrap';
 
 $(document).ready(function(){
 	$('.hamburger').click(function(){
