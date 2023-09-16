@@ -20,3 +20,27 @@
         }
     }
 }
+
+.swiperAbout {
+    overflow-x: hidden;
+}
+.swiper-scrollbar-drag {
+    background-color: $white;
+}
+.swiper-scrollbar {
+    height: 300px;
+}
+.fs-80 {
+    font-size: 80px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #fff;
+    position: initial;
+    margin-top: 0;
+    width: auto;
+    height: auto;
+    &::after {
+        content: '';
+    }
+}

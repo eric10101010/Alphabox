@@ -10,6 +10,7 @@
     <title>ALPHABOX+</title>
   </head>
   <body>
+    <%- include('./layout/header'); -%>
     <section class="indexBanner">
       <div class="indexBannerBox">
         <ul class="indexBannerList d-flex border py-7">
@@ -44,7 +45,7 @@
         </ul>
       </div>
     </section>
-    <section class="indexAbout radialToLight position-relative">
+    <section class="indexAbout commonBackColor1 position-relative">
       <div class="indexAboutBack">
         <div class="indexAboutTitle mb-6">
           <h2>什麼是<br>ALPHABOX+</h2>
@@ -99,7 +100,7 @@
       </div>
       </div>
     </section>
-    <section class="indexNews radialToLight">
+    <section class="indexNews commonBackColor1">
       <div class="container">
         <ul class="row g-0">
           <li class="indexNewsHeader">
@@ -157,7 +158,7 @@
         </ul>
       </div>
     </section>
-    <section class="indexUse position-relative overflow-hidden">
+    <section class="indexUse position-relative overflow-hidden commonBackColor2">
       <div class="container">
         <div class="indexUseTitle d-flex align-items-center">
           <h2>使用分享</h2>
@@ -286,8 +287,8 @@
     </section> 
     <section class="indexProduct">
       <ul class="indexProductBox d-flex">
-        <li class="indexProductItem indexProductItem1 d-flex flex-column justify-content-between">
-          <a href="#">
+        <li class="indexProductItem1 d-flex flex-column justify-content-between">
+          <a href="#" class="indexProductItem">
             <h2 class="text-center pt-4">1</h2>
             <div class="d-flex flex-column pb-7">
               <h3 class="text-center pb-9">Diane</h3>
@@ -299,8 +300,8 @@
             </div>
           </a>
         </li>
-        <li class="indexProductItem indexProductItem2 d-flex flex-column justify-content-between">
-          <a href="#">
+        <li class="indexProductItem2 d-flex flex-column justify-content-between">
+          <a href="#" class="indexProductItem">
             <h2 class="text-center pt-4">2</h2>
             <div class="d-flex flex-column pb-7">
               <h3 class="text-center pb-9">Felix</h3>
@@ -312,8 +313,8 @@
             </div>
           </a>
         </li>
-        <li class="indexProductItem indexProductItem3 d-flex flex-column justify-content-between">
-          <a href="#">
+        <li class="indexProductItem3 d-flex flex-column justify-content-between">
+          <a href="#" class="indexProductItem ">
             <h2 class="text-center pt-4">3</h2>
             <div class="d-flex flex-column pb-7">
               <h3 class="text-center pb-9">Karina</h3>
@@ -325,8 +326,8 @@
             </div>
           </a>
         </li>
-        <li class="indexProductItem indexProductItem4 d-flex flex-column justify-content-between">
-          <a href="#">
+        <li class="indexProductItem4 d-flex flex-column justify-content-between">
+          <a href="#" class="indexProductItem">
             <h2 class="text-center pt-4">4</h2>
             <div class="d-flex flex-column pb-7">
               <h3 class="text-center pb-9">Vito</h3>
@@ -340,6 +341,7 @@
         </li>
       </ul>
     </section>
+    <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>

@@ -1,6 +1,8 @@
 .intro {
   background: radial-gradient(50% 50.00% at 50% 50.00%, #28085C 0%, #000 100%);
 }
+
+
 .index {
   &Banner {
     background: url(../images/home_background.png) no-repeat 50% 50%;
@@ -37,6 +39,7 @@
     &Item {
       width: 416px;
       background-size: cover;
+      z-index: 100;
       h4 {
         font-size: 32px;
         color: #FFF;
@@ -132,7 +135,6 @@
     }
   }
   &Use {
-    background: radial-gradient(50% 50% at 50% 50%, #000 0%, #28085C 100%);
     color: $white;
     &Title {
       padding-top: 160px;
@@ -201,17 +203,15 @@
   &Product {
     color: $white;
     &Item {
+      color: $white;
       position: relative; 
       background-blend-mode: darken;
       background-size: cover;
       background-position: center;
       transition: all 1s;
-      width: 25%;
       height: 876px;
-      background-color: rgba(0, 0, 0, 0.5);
-      a {
-        color: $white;
-      }
+      background-color: rgba(0, 0, 0, 1);
+
       h2 {
         font-size: 400px;
       }
@@ -225,7 +225,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 1);
+        // background-color: rgba(0, 0, 0, 1);
         opacity: 1;
         transition: opacity 1s; 
         pointer-events: none;
@@ -241,50 +241,38 @@
       background: url(../images/diane_vertical.png) no-repeat 50% 0;
       background-size: cover;
       height: 876px;
+      width: 25%;
     }
     &Item2 {
       background: url(../images/felix_vertical.png) no-repeat 50% 0;
       background-size: cover;
       height: 876px;
+      width: 25%;
     }
     &Item3 {
       background: url(../images/karina_verticalgle.png) no-repeat 50% 0;
       background-size: cover;
       height: 876px;
+      width: 25%;
     }
     &Item4 {
       background: url(../images/vito_vertical.png) no-repeat 50% 0;
       background-size: cover;
       height: 876px;
+      width: 25%;
     }
   }
 }
 
-
-.radialToLight{
-  background: radial-gradient(50% 50.00% at 50% 50.00%, #28085C 0%, #000 100%);
-}
-
-.swiperAbout {
-  overflow-x: hidden;
-}
-.swiper-scrollbar-drag {
-  background-color: $white;
-}
-.swiper-scrollbar {
-  height: 300px;
-}
-.fs-80 {
-  font-size: 80px;
-}
-
-.swiper-button-next, .swiper-button-prev {
-  color: #fff;
-  position: initial;
-  margin-top: 0;
-  width: auto;
-  height: auto;
-  &::after {
-    content: '';
+.common {
+  &Back {
+    &Color1 {
+        background: radial-gradient(50% 50.00% at 50% 50.00%, #28085C 0%, #000 100%);
+    }
+    &Color2 {
+      background: radial-gradient(50% 50% at 50% 50%, #000 0%, #28085C 100%);
+  }
   }
 }
+
+

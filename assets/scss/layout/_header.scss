@@ -11,13 +11,12 @@
   }
   background-color: $primary;
   &Logo{
-      background: url(../images/logo-white.png) no-repeat center;
-      background-size: contain;
-      width: 80px;
-      text-indent: 101%;
-      white-space: nowrap;
-      overflow: hidden;
-      padding: 30px 0;
+      a{
+        color: #FFFFFF;
+        font-size: 48px;
+        padding: 16px 0;
+      }
+
       &:hover{
           color: $secondary;
           opacity: 0.5;
@@ -40,14 +39,14 @@
       flex-wrap: wrap;
   }
   &Item{
-      padding: 0 $text-xl;
+      padding: 0 20px;
       @include mobile {
           width: 50%;
           border: 1px solid $white;
       }
       a{
           color: $white;
-          font-size: $text-m;
+          font-size: 16px;
           line-height: 1.5;
           @include mobile{
               font-size: $font-size-base;
@@ -65,17 +64,6 @@
   &Link:hover{
       color: $secondary;
       transition: .5s;
-  }
-  &Hamburger {
-      &Logo {
-          background: url(../images/logo-white.png) no-repeat center;
-          background-size: contain;
-          width: 80px;
-          text-indent: 101%;
-          white-space: nowrap;
-          overflow: hidden;
-          padding: 30px 0;
-      }
   }
 }
 .hamburger {

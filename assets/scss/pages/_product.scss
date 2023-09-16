@@ -19,6 +19,10 @@
         &Photo {
             background-size: cover;
             height: 925px;
+            svg {
+                width: 80px;
+                height: 80px;
+            }
         }
         &Back1 {
             background: url(../images/diane_square1.png) no-repeat;
@@ -101,4 +105,8 @@
 .nav-pills .nav-link {
     border-radius: 40px;
     border: 1px solid #FFF;
+}
+
+.swiper-button-prev {
+    z-index: 100;
 }
