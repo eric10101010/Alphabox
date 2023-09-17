@@ -7,11 +7,69 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="shortcut icon" href="../assets/images/logo.ico">
     <title>ALPHABOX+ 使用問題</title>
-    <script type="module" crossorigin src="/Alphabox/assets/main-df8b6345.js"></script>
-    <link rel="stylesheet" href="/Alphabox/assets/main-a14e4633.css">
+    <script type="module" crossorigin src="/Alphabox/assets/main-f6e41392.js"></script>
+    <link rel="stylesheet" href="/Alphabox/assets/main-386a8212.css">
   </head>
   <body>
-    <section class="product">
+    <header class="header">
+    <div class="container">
+        <div class="headerBox d-flex d-lg-flex d-md-flex justify-content-between align-items-center">
+            <div class="headerLogo">
+                <h1>
+                    <a href="index.html">ALPHABOX+</a>
+                </h1>
+            </div>
+            <nav class="d-lg-flex d-md-flex d-none">
+                <ul class="headerMenu">
+                    <li class="headerItem"><a href="product.html" class="headerLink">產品</a></li>
+                    <li class="headerItem"><a href="about.html" class="headerLink">關於我們</a></li>
+                    <li class="headerItem"><a href="news.html" class="headerLink">最新消息</a></li>
+                    <li class="headerItem"><a href="faq.html" class="headerLink">FAQ</a></li>
+                    <li class="headerItem pe-0"><a href="contact.html" class="headerLink">聯絡我們</a></li>
+                </ul>
+            </nav>
+            <div class="d-lg-flex d-md-flex d-none">
+                <ul class="headerMenu">
+                    <li class="headerItem ps-0 pe-5"><a href="login.html" class="headerLink">註冊</a></li>
+                    <li class="headerItem px-0 pe-6"><a href="login.html" class="headerLink">登入</a></li>
+                    <li class="headerItem px-4 py-2 d-flex align-items-center bg-white rounded-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <mask id="mask0_7450_37" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                            <rect width="24" height="24" fill="#D9D9D9"/>
+                            </mask>
+                            <g mask="url(#mask0_7450_37)">
+                            <path d="M12 14C11.45 14 10.9792 13.8042 10.5875 13.4125C10.1958 13.0208 10 12.55 10 12C10 11.45 10.1958 10.9792 10.5875 10.5875C10.9792 10.1958 11.45 10 12 10C12.55 10 13.0208 10.1958 13.4125 10.5875C13.8042 10.9792 14 11.45 14 12C14 12.55 13.8042 13.0208 13.4125 13.4125C13.0208 13.8042 12.55 14 12 14ZM11 8V3H13V8H11ZM11 21V16H13V21H11ZM16 13V11H21V13H16ZM3 13V11H8V13H3Z" fill="black"/>
+                            </g>
+                        </svg>
+                        <a href="login.html" class="headerLink ms-1 text-dark">
+                            訂閱
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="headerHamburger d-lg-none d-md-none d-flex">
+                <input type="checkbox" id="toggler" class="d-none">
+                <label for="toggler">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                </label>
+                <ul class="hamburgerMenu">
+                    <ul class="headerList d-flex">
+                    <li class="headerItem"><a href="product.html" class="headerLink">產品</a></li>
+                    <li class="headerItem"><a href="about.html" class="headerLink">關於我們</a></li>
+                    <li class="headerItem"><a href="news.html" class="headerLink">最新消息</a></li>
+                    <li class="headerItem"><a href="faq.html" class="header-link">FAQ</a></li>
+                    <li class="headerItem"><a href="contact.html" class="header-link">聯絡我們</a></li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>    <section class="product">
       <ul class="productHeaderList py-4 nav nav-pills bg-dark" id="pills-tab" role="tablist">
         <li class="nav-item" role="presentation">
           <button class="productHeaderLink nav-link active" id="pills-diane-tab" data-bs-toggle="pill" data-bs-target="#pills-diane" type="button" role="tab" aria-controls="pills-diane" aria-selected="true">
@@ -37,14 +95,36 @@
       <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane tab-pane fade show active" id="pills-diane" role="tabpanel" aria-labelledby="pills-diane-tab">
           <section class="productBanner">
-            <div class="productBannerList d-flex">
-              <div class="productBannerBack swiperAbout px-0">
-                <ul class="swiper-wrapper mx-auto position-relative">
-                  <li class="swiper-slide productBannerBack1 productBannerPhoto">
-                  </li>
-                  <li class="swiper-slide productBannerBack2 productBannerPhoto">
-                  </li>
-                </ul>
+            <div class="productBannerList d-flex justify-content-between">
+              <div class="productBannerBack position-relative">
+                <div class="swiper-button-prev position-absolute top-50">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                    <mask id="mask0_390_137" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
+                    <rect width="80" height="80" fill="#D9D9D9"/>
+                    </mask>
+                    <g mask="url(#mask0_390_137)">
+                    <path d="M40 50.9616L42.2949 48.6667L35.2949 41.6667H51.6667V38.3333H35.2949L42.2949 31.3333L40 29.0384L29.0384 40L40 50.9616ZM40.0112 70C35.8627 70 31.9624 69.2128 28.3103 67.6384C24.6583 66.064 21.4815 63.9272 18.7799 61.2283C16.0784 58.5293 13.9397 55.3554 12.3638 51.7068C10.7879 48.0582 10 44.1596 10 40.0112C10 35.8627 10.7872 31.9624 12.3616 28.3103C13.936 24.6583 16.0728 21.4815 18.7717 18.7799C21.4707 16.0784 24.6446 13.9397 28.2932 12.3638C31.9418 10.7879 35.8404 10 39.9888 10C44.1373 10 48.0376 10.7872 51.6897 12.3616C55.3417 13.936 58.5185 16.0727 61.2201 18.7717C63.9216 21.4707 66.0603 24.6446 67.6362 28.2932C69.2121 31.9418 70 35.8404 70 39.9888C70 44.1373 69.2128 48.0376 67.6384 51.6897C66.064 55.3417 63.9272 58.5185 61.2283 61.2201C58.5293 63.9216 55.3554 66.0603 51.7068 67.6362C48.0582 69.2121 44.1596 70 40.0112 70ZM40 66.6667C47.4444 66.6667 53.75 64.0833 58.9167 58.9167C64.0833 53.75 66.6667 47.4444 66.6667 40C66.6667 32.5556 64.0833 26.25 58.9167 21.0833C53.75 15.9167 47.4444 13.3333 40 13.3333C32.5556 13.3333 26.25 15.9167 21.0833 21.0833C15.9167 26.25 13.3333 32.5556 13.3333 40C13.3333 47.4444 15.9167 53.75 21.0833 58.9167C26.25 64.0833 32.5556 66.6667 40 66.6667Z" fill="white" fill-opacity="0.3"/>
+                    </g>
+                  </svg>
+                </div>
+                <div class="swiperAbout px-0">
+                  <ul class="swiper-wrapper mx-auto">
+                    <li class="swiper-slide productBannerBack1 productBannerPhoto">
+                    </li>
+                    <li class="swiper-slide productBannerBack2 productBannerPhoto">
+                    </li>
+                  </ul>
+                </div>
+                <div class="swiper-button-next position-absolute top-50">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                    <mask id="mask0_627_647" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
+                    <rect width="80" height="80" fill="#D9D9D9"/>
+                    </mask>
+                    <g mask="url(#mask0_627_647)">
+                    <path d="M40 50.9616L50.9616 40L40 29.0384L37.7051 31.3333L44.7051 38.3333H28.3333V41.6667H44.7051L37.7051 48.6667L40 50.9616ZM40.0112 70C35.8627 70 31.9624 69.2128 28.3103 67.6384C24.6583 66.064 21.4815 63.9272 18.7799 61.2283C16.0784 58.5293 13.9397 55.3554 12.3638 51.7068C10.7879 48.0582 10 44.1596 10 40.0112C10 35.8627 10.7872 31.9624 12.3616 28.3103C13.936 24.6583 16.0728 21.4815 18.7717 18.7799C21.4707 16.0784 24.6446 13.9397 28.2932 12.3638C31.9418 10.7879 35.8404 10 39.9888 10C44.1373 10 48.0376 10.7872 51.6897 12.3616C55.3417 13.936 58.5185 16.0727 61.2201 18.7717C63.9216 21.4707 66.0603 24.6446 67.6362 28.2932C69.2121 31.9418 70 35.8404 70 39.9888C70 44.1373 69.2128 48.0376 67.6384 51.6897C66.064 55.3417 63.9272 58.5185 61.2283 61.2201C58.5293 63.9216 55.3554 66.0603 51.7068 67.6362C48.0582 69.2121 44.1596 70 40.0112 70ZM40 66.6667C47.4444 66.6667 53.75 64.0833 58.9167 58.9167C64.0833 53.75 66.6667 47.4444 66.6667 40C66.6667 32.5556 64.0833 26.25 58.9167 21.0833C53.75 15.9167 47.4444 13.3333 40 13.3333C32.5556 13.3333 26.25 15.9167 21.0833 21.0833C15.9167 26.25 13.3333 32.5556 13.3333 40C13.3333 47.4444 15.9167 53.75 21.0833 58.9167C26.25 64.0833 32.5556 66.6667 40 66.6667Z" fill="white"/>
+                    </g>
+                  </svg>
+                </div>
               </div>
               <div class="productBannerText px-0 ps-7">
                 <h2 class="pb-5">Diane</h2>
@@ -120,19 +200,41 @@
         </div>
         <div class="tab-pane fade" id="pills-felix" role="tabpanel" aria-labelledby="pills-felix-tab">
           <section class="productBanner">
-            <div class="productBannerList d-flex">
-              <div class="productBannerBack swiperAbout px-0">
-                <ul class="swiper-wrapper mx-auto position-relative">
-                  <li class="swiper-slide productBannerBack3 productBannerPhoto">
-                  </li>
-                  <li class="swiper-slide productBannerBack4 productBannerPhoto">
-                  </li>
-                </ul>
+            <div class="productBannerList d-flex justify-content-between">
+              <div class="productBannerBack position-relative">
+                <div class="swiper-button-prev position-absolute top-50">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                    <mask id="mask0_390_137" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
+                    <rect width="80" height="80" fill="#D9D9D9"/>
+                    </mask>
+                    <g mask="url(#mask0_390_137)">
+                    <path d="M40 50.9616L42.2949 48.6667L35.2949 41.6667H51.6667V38.3333H35.2949L42.2949 31.3333L40 29.0384L29.0384 40L40 50.9616ZM40.0112 70C35.8627 70 31.9624 69.2128 28.3103 67.6384C24.6583 66.064 21.4815 63.9272 18.7799 61.2283C16.0784 58.5293 13.9397 55.3554 12.3638 51.7068C10.7879 48.0582 10 44.1596 10 40.0112C10 35.8627 10.7872 31.9624 12.3616 28.3103C13.936 24.6583 16.0728 21.4815 18.7717 18.7799C21.4707 16.0784 24.6446 13.9397 28.2932 12.3638C31.9418 10.7879 35.8404 10 39.9888 10C44.1373 10 48.0376 10.7872 51.6897 12.3616C55.3417 13.936 58.5185 16.0727 61.2201 18.7717C63.9216 21.4707 66.0603 24.6446 67.6362 28.2932C69.2121 31.9418 70 35.8404 70 39.9888C70 44.1373 69.2128 48.0376 67.6384 51.6897C66.064 55.3417 63.9272 58.5185 61.2283 61.2201C58.5293 63.9216 55.3554 66.0603 51.7068 67.6362C48.0582 69.2121 44.1596 70 40.0112 70ZM40 66.6667C47.4444 66.6667 53.75 64.0833 58.9167 58.9167C64.0833 53.75 66.6667 47.4444 66.6667 40C66.6667 32.5556 64.0833 26.25 58.9167 21.0833C53.75 15.9167 47.4444 13.3333 40 13.3333C32.5556 13.3333 26.25 15.9167 21.0833 21.0833C15.9167 26.25 13.3333 32.5556 13.3333 40C13.3333 47.4444 15.9167 53.75 21.0833 58.9167C26.25 64.0833 32.5556 66.6667 40 66.6667Z" fill="white" fill-opacity="0.3"/>
+                    </g>
+                  </svg>
+                </div>
+                <div class="swiperAbout px-0">
+                  <ul class="swiper-wrapper mx-auto">
+                    <li class="swiper-slide productBannerBack1 productBannerPhoto">
+                    </li>
+                    <li class="swiper-slide productBannerBack2 productBannerPhoto">
+                    </li>
+                  </ul>
+                </div>
+                <div class="swiper-button-next position-absolute top-50">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                    <mask id="mask0_627_647" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
+                    <rect width="80" height="80" fill="#D9D9D9"/>
+                    </mask>
+                    <g mask="url(#mask0_627_647)">
+                    <path d="M40 50.9616L50.9616 40L40 29.0384L37.7051 31.3333L44.7051 38.3333H28.3333V41.6667H44.7051L37.7051 48.6667L40 50.9616ZM40.0112 70C35.8627 70 31.9624 69.2128 28.3103 67.6384C24.6583 66.064 21.4815 63.9272 18.7799 61.2283C16.0784 58.5293 13.9397 55.3554 12.3638 51.7068C10.7879 48.0582 10 44.1596 10 40.0112C10 35.8627 10.7872 31.9624 12.3616 28.3103C13.936 24.6583 16.0728 21.4815 18.7717 18.7799C21.4707 16.0784 24.6446 13.9397 28.2932 12.3638C31.9418 10.7879 35.8404 10 39.9888 10C44.1373 10 48.0376 10.7872 51.6897 12.3616C55.3417 13.936 58.5185 16.0727 61.2201 18.7717C63.9216 21.4707 66.0603 24.6446 67.6362 28.2932C69.2121 31.9418 70 35.8404 70 39.9888C70 44.1373 69.2128 48.0376 67.6384 51.6897C66.064 55.3417 63.9272 58.5185 61.2283 61.2201C58.5293 63.9216 55.3554 66.0603 51.7068 67.6362C48.0582 69.2121 44.1596 70 40.0112 70ZM40 66.6667C47.4444 66.6667 53.75 64.0833 58.9167 58.9167C64.0833 53.75 66.6667 47.4444 66.6667 40C66.6667 32.5556 64.0833 26.25 58.9167 21.0833C53.75 15.9167 47.4444 13.3333 40 13.3333C32.5556 13.3333 26.25 15.9167 21.0833 21.0833C15.9167 26.25 13.3333 32.5556 13.3333 40C13.3333 47.4444 15.9167 53.75 21.0833 58.9167C26.25 64.0833 32.5556 66.6667 40 66.6667Z" fill="white"/>
+                    </g>
+                  </svg>
+                </div>
               </div>
               <div class="productBannerText px-0 ps-7">
-                <h2 class="pb-5">Felix</h2>
-                <h3>娛樂型</h3>
-                <p>音樂播放/語音互動/遊戲陪伴</p>
+                <h2 class="pb-5">Diane</h2>
+                <h3>知識型</h3>
+                <p>學術領導/知識分享/智能問答</p>
                 <figure class="pt-4">
                   <svg xmlns="http://www.w3.org/2000/svg" width="306" height="14" viewBox="0 0 306 14" fill="none">
                     <path d="M283.55 13.8938L290.486 8.24316H0.0500488V6.3596H290.486L283.55 0.708916L305.825 7.30138L283.55 13.8938Z" fill="white"/>
@@ -203,19 +305,41 @@
         </div>
         <div class="tab-pane fade" id="pills-karina" role="tabpanel" aria-labelledby="pills-karina-tab">
           <section class="productBanner">
-            <div class="productBannerList d-flex">
-              <div class="productBannerBack swiperAbout px-0">
-                <ul class="swiper-wrapper mx-auto position-relative">
-                  <li class="swiper-slide productBannerBack5 productBannerPhoto">
-                  </li>
-                  <li class="swiper-slide productBannerBack6 productBannerPhoto">
-                  </li>
-                </ul>
+            <div class="productBannerList d-flex justify-content-between">
+              <div class="productBannerBack position-relative">
+                <div class="swiper-button-prev position-absolute top-50">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                    <mask id="mask0_390_137" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
+                    <rect width="80" height="80" fill="#D9D9D9"/>
+                    </mask>
+                    <g mask="url(#mask0_390_137)">
+                    <path d="M40 50.9616L42.2949 48.6667L35.2949 41.6667H51.6667V38.3333H35.2949L42.2949 31.3333L40 29.0384L29.0384 40L40 50.9616ZM40.0112 70C35.8627 70 31.9624 69.2128 28.3103 67.6384C24.6583 66.064 21.4815 63.9272 18.7799 61.2283C16.0784 58.5293 13.9397 55.3554 12.3638 51.7068C10.7879 48.0582 10 44.1596 10 40.0112C10 35.8627 10.7872 31.9624 12.3616 28.3103C13.936 24.6583 16.0728 21.4815 18.7717 18.7799C21.4707 16.0784 24.6446 13.9397 28.2932 12.3638C31.9418 10.7879 35.8404 10 39.9888 10C44.1373 10 48.0376 10.7872 51.6897 12.3616C55.3417 13.936 58.5185 16.0727 61.2201 18.7717C63.9216 21.4707 66.0603 24.6446 67.6362 28.2932C69.2121 31.9418 70 35.8404 70 39.9888C70 44.1373 69.2128 48.0376 67.6384 51.6897C66.064 55.3417 63.9272 58.5185 61.2283 61.2201C58.5293 63.9216 55.3554 66.0603 51.7068 67.6362C48.0582 69.2121 44.1596 70 40.0112 70ZM40 66.6667C47.4444 66.6667 53.75 64.0833 58.9167 58.9167C64.0833 53.75 66.6667 47.4444 66.6667 40C66.6667 32.5556 64.0833 26.25 58.9167 21.0833C53.75 15.9167 47.4444 13.3333 40 13.3333C32.5556 13.3333 26.25 15.9167 21.0833 21.0833C15.9167 26.25 13.3333 32.5556 13.3333 40C13.3333 47.4444 15.9167 53.75 21.0833 58.9167C26.25 64.0833 32.5556 66.6667 40 66.6667Z" fill="white" fill-opacity="0.3"/>
+                    </g>
+                  </svg>
+                </div>
+                <div class="swiperAbout px-0">
+                  <ul class="swiper-wrapper mx-auto">
+                    <li class="swiper-slide productBannerBack1 productBannerPhoto">
+                    </li>
+                    <li class="swiper-slide productBannerBack2 productBannerPhoto">
+                    </li>
+                  </ul>
+                </div>
+                <div class="swiper-button-next position-absolute top-50">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                    <mask id="mask0_627_647" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
+                    <rect width="80" height="80" fill="#D9D9D9"/>
+                    </mask>
+                    <g mask="url(#mask0_627_647)">
+                    <path d="M40 50.9616L50.9616 40L40 29.0384L37.7051 31.3333L44.7051 38.3333H28.3333V41.6667H44.7051L37.7051 48.6667L40 50.9616ZM40.0112 70C35.8627 70 31.9624 69.2128 28.3103 67.6384C24.6583 66.064 21.4815 63.9272 18.7799 61.2283C16.0784 58.5293 13.9397 55.3554 12.3638 51.7068C10.7879 48.0582 10 44.1596 10 40.0112C10 35.8627 10.7872 31.9624 12.3616 28.3103C13.936 24.6583 16.0728 21.4815 18.7717 18.7799C21.4707 16.0784 24.6446 13.9397 28.2932 12.3638C31.9418 10.7879 35.8404 10 39.9888 10C44.1373 10 48.0376 10.7872 51.6897 12.3616C55.3417 13.936 58.5185 16.0727 61.2201 18.7717C63.9216 21.4707 66.0603 24.6446 67.6362 28.2932C69.2121 31.9418 70 35.8404 70 39.9888C70 44.1373 69.2128 48.0376 67.6384 51.6897C66.064 55.3417 63.9272 58.5185 61.2283 61.2201C58.5293 63.9216 55.3554 66.0603 51.7068 67.6362C48.0582 69.2121 44.1596 70 40.0112 70ZM40 66.6667C47.4444 66.6667 53.75 64.0833 58.9167 58.9167C64.0833 53.75 66.6667 47.4444 66.6667 40C66.6667 32.5556 64.0833 26.25 58.9167 21.0833C53.75 15.9167 47.4444 13.3333 40 13.3333C32.5556 13.3333 26.25 15.9167 21.0833 21.0833C15.9167 26.25 13.3333 32.5556 13.3333 40C13.3333 47.4444 15.9167 53.75 21.0833 58.9167C26.25 64.0833 32.5556 66.6667 40 66.6667Z" fill="white"/>
+                    </g>
+                  </svg>
+                </div>
               </div>
               <div class="productBannerText px-0 ps-7">
-                <h2 class="pb-5">Karina</h2>
-                <h3>生活型</h3>
-                <p>健康提醒/日程安排/智能家居</p>
+                <h2 class="pb-5">Diane</h2>
+                <h3>知識型</h3>
+                <p>學術領導/知識分享/智能問答</p>
                 <figure class="pt-4">
                   <svg xmlns="http://www.w3.org/2000/svg" width="306" height="14" viewBox="0 0 306 14" fill="none">
                     <path d="M283.55 13.8938L290.486 8.24316H0.0500488V6.3596H290.486L283.55 0.708916L305.825 7.30138L283.55 13.8938Z" fill="white"/>
@@ -286,19 +410,41 @@
         </div>
         <div class="tab-pane fade" id="pills-vito" role="tabpanel" aria-labelledby="pills-vito-tab">
           <section class="productBanner">
-            <div class="productBannerList d-flex">
-              <div class="productBannerBack swiperAbout px-0">
-                <ul class="swiper-wrapper mx-auto position-relative">
-                  <li class="swiper-slide productBannerBack7 productBannerPhoto">
-                  </li>
-                  <li class="swiper-slide productBannerBack8 productBannerPhoto">
-                  </li>
-                </ul>
+            <div class="productBannerList d-flex justify-content-between">
+              <div class="productBannerBack position-relative">
+                <div class="swiper-button-prev position-absolute top-50">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                    <mask id="mask0_390_137" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
+                    <rect width="80" height="80" fill="#D9D9D9"/>
+                    </mask>
+                    <g mask="url(#mask0_390_137)">
+                    <path d="M40 50.9616L42.2949 48.6667L35.2949 41.6667H51.6667V38.3333H35.2949L42.2949 31.3333L40 29.0384L29.0384 40L40 50.9616ZM40.0112 70C35.8627 70 31.9624 69.2128 28.3103 67.6384C24.6583 66.064 21.4815 63.9272 18.7799 61.2283C16.0784 58.5293 13.9397 55.3554 12.3638 51.7068C10.7879 48.0582 10 44.1596 10 40.0112C10 35.8627 10.7872 31.9624 12.3616 28.3103C13.936 24.6583 16.0728 21.4815 18.7717 18.7799C21.4707 16.0784 24.6446 13.9397 28.2932 12.3638C31.9418 10.7879 35.8404 10 39.9888 10C44.1373 10 48.0376 10.7872 51.6897 12.3616C55.3417 13.936 58.5185 16.0727 61.2201 18.7717C63.9216 21.4707 66.0603 24.6446 67.6362 28.2932C69.2121 31.9418 70 35.8404 70 39.9888C70 44.1373 69.2128 48.0376 67.6384 51.6897C66.064 55.3417 63.9272 58.5185 61.2283 61.2201C58.5293 63.9216 55.3554 66.0603 51.7068 67.6362C48.0582 69.2121 44.1596 70 40.0112 70ZM40 66.6667C47.4444 66.6667 53.75 64.0833 58.9167 58.9167C64.0833 53.75 66.6667 47.4444 66.6667 40C66.6667 32.5556 64.0833 26.25 58.9167 21.0833C53.75 15.9167 47.4444 13.3333 40 13.3333C32.5556 13.3333 26.25 15.9167 21.0833 21.0833C15.9167 26.25 13.3333 32.5556 13.3333 40C13.3333 47.4444 15.9167 53.75 21.0833 58.9167C26.25 64.0833 32.5556 66.6667 40 66.6667Z" fill="white" fill-opacity="0.3"/>
+                    </g>
+                  </svg>
+                </div>
+                <div class="swiperAbout px-0">
+                  <ul class="swiper-wrapper mx-auto">
+                    <li class="swiper-slide productBannerBack1 productBannerPhoto">
+                    </li>
+                    <li class="swiper-slide productBannerBack2 productBannerPhoto">
+                    </li>
+                  </ul>
+                </div>
+                <div class="swiper-button-next position-absolute top-50">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                    <mask id="mask0_627_647" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
+                    <rect width="80" height="80" fill="#D9D9D9"/>
+                    </mask>
+                    <g mask="url(#mask0_627_647)">
+                    <path d="M40 50.9616L50.9616 40L40 29.0384L37.7051 31.3333L44.7051 38.3333H28.3333V41.6667H44.7051L37.7051 48.6667L40 50.9616ZM40.0112 70C35.8627 70 31.9624 69.2128 28.3103 67.6384C24.6583 66.064 21.4815 63.9272 18.7799 61.2283C16.0784 58.5293 13.9397 55.3554 12.3638 51.7068C10.7879 48.0582 10 44.1596 10 40.0112C10 35.8627 10.7872 31.9624 12.3616 28.3103C13.936 24.6583 16.0728 21.4815 18.7717 18.7799C21.4707 16.0784 24.6446 13.9397 28.2932 12.3638C31.9418 10.7879 35.8404 10 39.9888 10C44.1373 10 48.0376 10.7872 51.6897 12.3616C55.3417 13.936 58.5185 16.0727 61.2201 18.7717C63.9216 21.4707 66.0603 24.6446 67.6362 28.2932C69.2121 31.9418 70 35.8404 70 39.9888C70 44.1373 69.2128 48.0376 67.6384 51.6897C66.064 55.3417 63.9272 58.5185 61.2283 61.2201C58.5293 63.9216 55.3554 66.0603 51.7068 67.6362C48.0582 69.2121 44.1596 70 40.0112 70ZM40 66.6667C47.4444 66.6667 53.75 64.0833 58.9167 58.9167C64.0833 53.75 66.6667 47.4444 66.6667 40C66.6667 32.5556 64.0833 26.25 58.9167 21.0833C53.75 15.9167 47.4444 13.3333 40 13.3333C32.5556 13.3333 26.25 15.9167 21.0833 21.0833C15.9167 26.25 13.3333 32.5556 13.3333 40C13.3333 47.4444 15.9167 53.75 21.0833 58.9167C26.25 64.0833 32.5556 66.6667 40 66.6667Z" fill="white"/>
+                    </g>
+                  </svg>
+                </div>
               </div>
               <div class="productBannerText px-0 ps-7">
-                <h2 class="pb-5">Vito</h2>
-                <h3>情感型</h3>
-                <p>情感識別/心情分析/心靈支持</p>
+                <h2 class="pb-5">Diane</h2>
+                <h3>知識型</h3>
+                <p>學術領導/知識分享/智能問答</p>
                 <figure class="pt-4">
                   <svg xmlns="http://www.w3.org/2000/svg" width="306" height="14" viewBox="0 0 306 14" fill="none">
                     <path d="M283.55 13.8938L290.486 8.24316H0.0500488V6.3596H290.486L283.55 0.708916L305.825 7.30138L283.55 13.8938Z" fill="white"/>
@@ -424,7 +570,48 @@
         </div>
       </div>
     </section>
-    
+    <footer class="footer bg-white">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="footerCopy">
+                <h3>ALPHABOX+</h3>
+                <p>Copyright © 2023 Hexschool.</p>
+            </div>
+            <figure class="footerIcon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                    <mask id="mask0_287_5434" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
+                    <rect width="80" height="80" fill="#D9D9D9"/>
+                    </mask>
+                    <g mask="url(#mask0_287_5434)">
+                    <path d="M34.1665 70V50.1667L16.9998 60.0833L11.1665 50L28.3332 40L11.1665 30.0833L16.9998 20L34.1665 29.9167V10H45.8332V29.9167L62.9998 20L68.8332 30.0833L51.6665 40L68.8332 50L62.9998 60.0833L45.8332 50.1667V70H34.1665Z" fill="black"/>
+                    </g>
+                </svg>
+            </figure>
+            <ul class="footerList d-flex">
+                <li class="footerItem">
+                    <a href="about.html">
+                        關於我們
+                    </a>
+                </li>
+                <li class="footerItem">
+                    <a href="product.html">
+                        產品資訊
+                    </a>
+                </li>
+                <li class="footerItem">
+                    <a href="faq.html">
+                        常見問題
+                    </a>
+                </li>
+                <li class="footerItem">
+                    <a href="#">
+                        隱私政策
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>    
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>

@@ -28,7 +28,17 @@
     background-color: $white;
 }
 .swiper-scrollbar {
-    height: 300px;
+    width: 68%;
+    background: rgba(255, 255, 255, 0.20);
+    p {
+        color: #FFF;
+        position: absolute;
+        right: -82px;
+        bottom: -8px;
+    }
+}
+.swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal{
+    width: 66.0495%;
 }
 .fs-80 {
     font-size: 80px;
@@ -44,3 +54,4 @@
         content: '';
     }
 }
+

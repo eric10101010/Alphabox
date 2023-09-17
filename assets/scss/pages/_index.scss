@@ -136,6 +136,20 @@
   }
   &Use {
     color: $white;
+    &Box {
+      max-width: 1608px;
+    }
+    &Back {
+      max-width: 1920px;
+      h2 {
+        font-size: 400px;
+        line-height: 200px;
+        color: rgba(255, 255, 255, 0.04);
+        position: relative;
+        right: 300px;
+        bottom: -40px;
+      }
+    }
     &Title {
       padding-top: 160px;
       h2 {
@@ -145,11 +159,9 @@
       }    
     }
     &Item {
+      height: 416px;
       padding: 40px;
       cursor: pointer;
-      p {
-        padding-bottom: 160px;
-      }
     }
     &DotS {
       width: 8px;
