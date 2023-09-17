@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/images/logo.ico">
+    <title>ALPHABOX+ 使用問題</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%> 
+    <section class="register">
+      <div class="container">
+        <div class="loginTitle d-flex justify-content-between align-items-end">
+          <h2>註冊</h2>
+          <figure>
+            <img src="../assets/images/circle.png" alt="circle">
+          </figure>
+          <h3>註冊</h3>
+        </div>
+        <ul class="loginTop d-flex flex-column align-items-center">
+          <h3 class="text-white mt-5">ALPHABOX+</h3>
+          <li class="loginTopItem mt-6 mb-4">
+            <div class="d-flex align-items-center justify-content-center">
+              <img src="../assets/images/apple 1.png" alt="apple">
+              <h4 class="text-white">Continue with Apple</h4>
+            </div>
+          </li>
+          <li class="loginTopItem">
+            <div class="d-flex align-items-center justify-content-center">
+              <img src="../assets/images/google.png" alt="google">
+              <h4 class="text-white">Continue with Google</h4>
+            </div>
+          </li>
+        </ul>
+        <div class="loginCenter d-flex justify-content-center py-5">
+          <div class="loginCenterBox d-flex">
+            <figure>
+              <svg xmlns="http://www.w3.org/2000/svg" width="197" height="1" viewBox="0 0 197 1" fill="none">
+                <path d="M1 0C0.723858 0 0.5 0.223858 0.5 0.5C0.5 0.776142 0.723858 1 1 1V0ZM1 1H197V0H1V1Z" fill="#828282"/>
+              </svg>
+            </figure>
+            <p class="text-white px-1">or</p>
+            <figure>
+              <svg xmlns="http://www.w3.org/2000/svg" width="197" height="1" viewBox="0 0 197 1" fill="none">
+                <path d="M1 0C0.723858 0 0.5 0.223858 0.5 0.5C0.5 0.776142 0.723858 1 1 1V0ZM1 1H197V0H1V1Z" fill="#828282"/>
+              </svg>
+            </figure>
+          </div>
+        </div>
+        <div class="loginBottom d-flex justify-content-center">
+          <form class="loginBottomForm">
+            <div class="form-floating">
+              <label for="emailInput" class="text-dark">姓名</label>
+              <input type="email" class="form-control bg-white text-dark rounded-0 mb-4 px-4 py-2" id="emailInput" placeholder="EMAIL">
+            </div>
+            <div class="form-floating">
+              <label for="emailInput" class="text-dark">EMAIL</label>
+              <input type="email" class="form-control bg-white text-dark rounded-0 mb-4 px-4 py-2" id="emailInput" placeholder="EMAIL">
+            </div>
+            <div class="form-floating">
+              <label for="emailInput" class="text-dark">密碼</label>
+              <input type="email" class="form-control bg-white text-dark rounded-0 mb-4 px-4 py-2" id="emailInput" placeholder="EMAIL">
+            </div>
+            <div class="form-check">
+              <input class="form-check-input bg-dark border-white" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label text-white" for="flexCheckDefault">
+                我已仔細閱讀相關條例
+              </label>
+            </div>
+            <div class="loginBtn d-flex align-items-center justify-content-center bg-light mt-5 mb-2">
+              <figure>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <mask id="mask0_403_1263" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                  <rect width="24" height="24" fill="#D9D9D9"/>
+                  </mask>
+                  <g mask="url(#mask0_403_1263)">
+                  <path d="M12 14C11.45 14 10.9792 13.8042 10.5875 13.4125C10.1958 13.0208 10 12.55 10 12C10 11.45 10.1958 10.9792 10.5875 10.5875C10.9792 10.1958 11.45 10 12 10C12.55 10 13.0208 10.1958 13.4125 10.5875C13.8042 10.9792 14 11.45 14 12C14 12.55 13.8042 13.0208 13.4125 13.4125C13.0208 13.8042 12.55 14 12 14ZM11 8V3H13V8H11ZM11 21V16H13V21H11ZM16 13V11H21V13H16ZM3 13V11H8V13H3Z" fill="white"/>
+                  </g>
+                </svg>
+              </figure>
+              <a href="#" class="text-white ms-1">
+                建立帳號
+              </a>
+            </div>
+            <p class="text-white d-flex justify-content-end">已有帳號嗎？前往<a href="login.html" class="text-white border-bottom border-white pb-0">登入</a></p>  
+          </form>
+        </div>
+      </div>
+    </section>
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+  </body>
+</html>

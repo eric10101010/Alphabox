@@ -8,6 +8,7 @@
             h2 {
                 font-size: 48px;
                 letter-spacing: 48px;
+                // padding-right: 214px;
             }
         }
         &List {
@@ -15,8 +16,19 @@
             justify-content: space-between;
         }
         &Item {
+            height: 416px;
             padding: 40px;
-            width: 31%;
+            cursor: pointer;
+        }
+        &DotS {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+        &DotM {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
         }
     }
 }
