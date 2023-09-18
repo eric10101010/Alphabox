@@ -10,6 +10,15 @@
     }
     &Content {
         padding-bottom: 160px;
+        &List {
+            display: flex;
+            column-gap: 134px;
+        }
+        &Info {
+            h4 {
+                color: rgba(255, 255, 255, 0.50);
+            }
+        }
     }
     &Bar {
         padding: 48px 0;
