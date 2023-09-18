@@ -2,37 +2,51 @@
   &Banner {
     background: url(../images/home_background.png) no-repeat 50% 50%;
     height: 880px;
+    @include pad {
+      height: 500px;
+    }
     img {
       width: 196px;
       height: 196px;
+      @include pad {
+        width: 148px;
+        height: 148px;
+      }
     }
-    h3 {
-      color: #FFFFFF;
-    }
-    &List {
-      max-width: 1920px;
+    &Box {
+      max-width: 1760px;
       margin: 0 auto;
+      @include pad {
+        max-width: 768px;
+      }
     }
     &Circle {
-      width: 864px;
+      width: 49.091%;
     }
     &Text {
-      width: 864px;
+      width: 49.091%;
       position: absolute;
       top: 36px;
       left: 50%;
       transform: translate(-50%, -50%);
-      color: #FFF;
       h2 {
         font-size: 32px;
         letter-spacing: 80px;
+        @include pad {
+          font-size: 24px;
+          letter-spacing: 30px;
+        }
       }
       h3 {
         letter-spacing: 16px;
+        @include pad {
+          font-size: 14px;
+          letter-spacing: 14px;
+        }
       }
     }
     &Item {
-      width: 416px;
+      width: 23.6365%;
       background-size: cover;
       z-index: 100;
       h4 {
@@ -43,23 +57,34 @@
     &Item1 {
       background-image: url(../images/diane.png);
       height: 676px;
+      @include pad {
+        height: 295px;
+      }
     }
     &Item2 {
       background-image: url(../images/felix.png);
       height: 580px;
+      @include pad {
+        height: 215px;
+      }
     }
     &Item3 {
       background-image: url(../images/karina.png);
       height: 580px;
+      @include pad {
+        height: 215px;
+      }
     }
     &Item4 {
       background-image: url(../images/vito.png);
       height: 676px;
+      @include pad {
+        height: 295px;
+      }
     }
     &Line {
       width: 100%;
       height: 40px;
-      background-color: red;
       z-index: 100;
     }
   }
@@ -73,13 +98,23 @@
       background-size: 50% 100%;
       background-repeat: no-repeat;
       height: 1080px;
+      @include pad {
+        height: 840px;
+      }
     }
     &Title {
+      padding-top: 192px;
+      @include pad {
+        padding-top: 72px;
+      }
       h2 {
-        padding-top: 192px;
         font-size: 48px;
         color: #FFF;
         letter-spacing: 48px;
+        @include pad {
+          font-size: 28px;
+          letter-spacing: 28px;
+        }
       }
     }
     &Card {
@@ -90,6 +125,9 @@
       height: 560px;
       color: #FFFFFF;
       padding-right: 40px;
+      @include pad {
+        background-image: url(../images/mobile/carousel_mobile.png);
+      }
       h3 {
         font-size: 96px;
       }
@@ -102,10 +140,17 @@
   &News {
     color: #FFFFFF;
     &Header {
+      padding-top: 160px;
+      @include pad {
+        padding-top: 80px;
+      }
       h2 {
-        padding-top: 160px;
         font-size: 48px;
         letter-spacing: 48px;
+        @include pad {
+          font-size: 36px;
+          letter-spacing: 36px;
+        }
       }
     }
     &Content {
@@ -136,9 +181,16 @@
     }
     &Title {
       padding-top: 160px;
+      @include pad {
+        padding-top: 80px;
+      }
       h2 {
         font-size: 48px;
         letter-spacing: 48px;
+        @include pad {
+          font-size: 36px;
+          letter-spacing: 36px;
+        }
       }
     }
     &Back {
@@ -150,13 +202,21 @@
         position: relative;
         right: 300px;
         bottom: -40px;
+        @include pad {
+          font-size: 200px;
+          line-height: 100px;
+          bottom: -20px;
+        }
       }
     }
   }
   &Contact {
     background-color: #1F0F39;
-    height: 622px;
+    padding-bottom: 144px;
     color: #FFF;
+    @include pad {
+      padding-bottom: 72px;
+    }
     &Dot {
       border-radius: 50%;
       background-color: #FFF;
@@ -165,13 +225,23 @@
     }
     &List {
       padding-top: 144px;
+      @include pad {
+        padding-top: 72px;
+      }
     }
     &Title {
-      width: 336px;
+      width: 25.455%;
+      @include pad {
+        width: 50%;
+      }
       h2 {
         font-size: 48px;
         letter-spacing: 48px;
         padding-bottom: 20px;
+        @include mobile {
+          font-size: 32px;
+          letter-spacing: 32px;
+        }
       }
       span {
         font-size: 48px;
@@ -202,12 +272,22 @@
       transition: all 1s;
       height: 876px;
       background-color: rgba(0, 0, 0, 1);
-
+      @include pad {
+        height: 420px;
+      }
       h2 {
         font-size: 400px;
+        @include pad {
+          font-size: 150px;
+        }
       }
       h3 {
         font-size: 32px;
+      }
+      h4 {
+        @include pad {
+          font-size: 14px;
+        }
       }
       &:before {
         content: "";
@@ -233,24 +313,36 @@
       background-size: cover;
       height: 876px;
       width: 25%;
+      @include pad {
+        height: 420px;
+      }
     }
     &Item2 {
       background: url(../images/felix_vertical.png) no-repeat 50% 0;
       background-size: cover;
       height: 876px;
       width: 25%;
+      @include pad {
+        height: 420px;
+      }
     }
     &Item3 {
       background: url(../images/karina_verticalgle.png) no-repeat 50% 0;
       background-size: cover;
       height: 876px;
       width: 25%;
+      @include pad {
+        height: 420px;
+      }
     }
     &Item4 {
       background: url(../images/vito_vertical.png) no-repeat 50% 0;
       background-size: cover;
       height: 876px;
       width: 25%;
+      @include pad {
+        height: 420px;
+      }
     }
   }
 }

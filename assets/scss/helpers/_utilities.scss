@@ -36,6 +36,9 @@
 
 .swiperAbout {
     overflow-x: hidden;
+    @include pad {
+        position: relative;
+    }
 }
 .swiper-scrollbar-drag {
     background-color: $white;
@@ -65,6 +68,9 @@
     height: auto;
     &::after {
         content: '';
+    }
+    @include pad {
+        position: absolute;
     }
 }
 

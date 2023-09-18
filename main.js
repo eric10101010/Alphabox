@@ -34,7 +34,7 @@ var swiper = new Swiper(".swiperUse", {
 		slidesPerView: 2,
 		},
 		992:{
-		slidesPerView: 3.72,
+		slidesPerView: 3.7,
 		}
 	},
 	scrollbar: {
