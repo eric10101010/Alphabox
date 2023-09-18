@@ -1,18 +1,27 @@
 .contact {
     background: radial-gradient(50% 50% at 50% 50%, #28085C 0%, #000 100%);
-    color: $white;
     &Title {
+        padding-top: 160px;
+        @include pad {
+            padding-top: 80px;
+        }
         h2 {
             font-size: 64px;
             letter-spacing: 64px;
-            padding-top: 160px;
+            @include pad {
+                font-size: 48px;
+                letter-spacing: 48px;
+                text-align: center;
+            }
         }
     }
     &Content {
-        padding-bottom: 160px;
-        &List {
-            display: flex;
-            column-gap: 134px;
+        padding-top: 160px;
+        display: flex;
+        column-gap: 134px;
+        @include pad {
+            column-gap: 24px;
+            padding-bottom: 80px;
         }
         &Info {
             h4 {
@@ -28,17 +37,31 @@
     }
     &Choose {
         padding-bottom: 120px;
+        @include pad {
+            padding-bottom: 60px;
+        }
         h2 {
             font-size: 64px;
             letter-spacing: 64px;
             padding-top: 160px;
+            @include pad {
+                font-size: 42px;
+                letter-spacing: 42px;
+                padding-top: 80px;
+            }
         }
         h3 {
             font-size: 48px;
+            @include pad {
+                font-size: 32px;
+            }
         }
         &Item {
             width: 72.292%;
             height: 232px;
+            @include pad {
+                height: 168px;
+            }
             h3 {
                 color: $white;
                 font-size: 64px;
@@ -47,18 +70,54 @@
         &Item1 {
             background: url(../images/horizontal/diane_horizontal.png) no-repeat;
             background-size: cover;
+            @include pad {
+                background: url(../images/mobile/diane_choose.png) 100% 40% no-repeat;
+            }
+            h3 {
+                padding-left: 312px;
+                @include pad {
+                    padding-left: 55px;
+                }
+            }
         }
         &Item2 {
             background: url(../images/horizontal/felix_horizontal.png) no-repeat;
             background-size: cover;
+            @include pad {
+                background: url(../images/mobile/felix_choose.png) 0% 40% no-repeat;
+            }
+            h3 {
+                padding-right: 311px;
+                @include pad {
+                    padding-right: 55px;
+                }
+            }
         }
         &Item3 {
             background: url(../images/horizontal/karina_horizontal.png) no-repeat;
             background-size: cover;
+            @include pad {
+                background: url(../images/mobile/karina_choose.png) 100% 50% no-repeat;
+            }
+            h3 {
+                padding-left: 312px;
+                @include pad {
+                    padding-left: 55px;
+                }
+            }
         }
         &Item4 {
             background: url(../images/horizontal/vito_horizontal.png) no-repeat;
             background-size: cover;
+            @include pad {
+                background: url(../images/mobile/vito_choose.png) 0% 35% no-repeat;
+            }
+            h3 {
+                padding-right: 315px;
+                @include pad {
+                    padding-right: 56px;
+                }
+            }
         }
     }
 }
