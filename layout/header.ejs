@@ -6,7 +6,7 @@
                     <a href="index.html">ALPHABOX+</a>
                 </h1>
             </div>
-            <nav class="d-lg-flex d-md-flex d-none">
+            <nav class="d-lg-flex d-md-none d-none">
                 <ul class="headerMenu">
                     <li class="headerItem"><a href="product.html" class="headerLink">產品</a></li>
                     <li class="headerItem"><a href="about.html" class="headerLink">關於我們</a></li>
@@ -15,7 +15,7 @@
                     <li class="headerItem pe-0"><a href="contact.html" class="headerLink">聯絡我們</a></li>
                 </ul>
             </nav>
-            <div class="d-lg-flex d-md-flex d-none">
+            <div class="d-lg-flex d-md-none d-none">
                 <ul class="headerMenu">
                     <li class="headerItem ps-0 pe-5"><a href="register.html" class="headerLink">註冊</a></li>
                     <li class="headerItem px-0 pe-6"><a href="login.html" class="headerLink">登入</a></li>
@@ -34,7 +34,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="headerHamburger d-lg-none d-md-none d-flex">
+            <div class="headerHamburger d-lg-none d-md-flex d-flex">
                 <input type="checkbox" id="toggler" class="d-none">
                 <label for="toggler">
                 <div class="hamburger">
@@ -44,15 +44,34 @@
                     <span></span>
                 </div>
                 </label>
-                <ul class="hamburgerMenu">
-                    <ul class="headerList d-flex">
-                    <li class="headerItem"><a href="product.html" class="headerLink">產品</a></li>
-                    <li class="headerItem"><a href="about.html" class="headerLink">關於我們</a></li>
-                    <li class="headerItem"><a href="news.html" class="headerLink">最新消息</a></li>
-                    <li class="headerItem"><a href="faq.html" class="header-link">FAQ</a></li>
-                    <li class="headerItem"><a href="contact.html" class="header-link">聯絡我們</a></li>
+                <div class="hamburgerMenu">
+                    <ul class="headerList d-flex justify-content-between">
+                        <ul class="d-flex py-4 align-items-center">
+                            <li class="headerItem"><a href="product.html" class="headerLink">產品</a></li>
+                            <li class="headerItem"><a href="about.html" class="headerLink">關於我們</a></li>
+                            <li class="headerItem"><a href="news.html" class="headerLink">最新消息</a></li>
+                            <li class="headerItem"><a href="faq.html" class="header-link">FAQ</a></li>
+                            <li class="headerItem"><a href="contact.html" class="header-link">聯絡我們</a></li>
+                        </ul>
+                        <ul class="d-flex py-4 align-items-center">
+                            <li class="headerItem"><a href="register.html" class="headerLink">註冊</a></li>
+                            <li class="headerItem"><a href="login.html" class="headerLink">登入</a></li>
+                            <li class="headerItem px-3 py-2 d-flex align-items-center bg-white rounded-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <mask id="mask0_7450_37" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                                    <rect width="24" height="24" fill="#D9D9D9"/>
+                                    </mask>
+                                    <g mask="url(#mask0_7450_37)">
+                                    <path d="M12 14C11.45 14 10.9792 13.8042 10.5875 13.4125C10.1958 13.0208 10 12.55 10 12C10 11.45 10.1958 10.9792 10.5875 10.5875C10.9792 10.1958 11.45 10 12 10C12.55 10 13.0208 10.1958 13.4125 10.5875C13.8042 10.9792 14 11.45 14 12C14 12.55 13.8042 13.0208 13.4125 13.4125C13.0208 13.8042 12.55 14 12 14ZM11 8V3H13V8H11ZM11 21V16H13V21H11ZM16 13V11H21V13H16ZM3 13V11H8V13H3Z" fill="black"/>
+                                    </g>
+                                </svg>
+                                <a href="#" class="headerLink ms-1 text-dark">
+                                    訂閱
+                                </a>
+                            </li>
+                        </ul>
                     </ul>
-                </ul>
+                </div>
             </div>
         </div>
     </div>
