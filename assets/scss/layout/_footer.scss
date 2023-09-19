@@ -1,16 +1,29 @@
 .footer {
     &Copy {
         padding: 52px 0;
+        @include pad {
+            padding: 36px 0;
+        }
         h3 {
             font-size: 32px;
             font-weight: bold;
+            @include pad {
+                font-size: 28px;
+            }
         }
         p {
             letter-spacing: 1.6px;
+            @include pad {
+                font-size: 14px;
+                letter-spacing: 1.4px;
+            }
         }
     }
     &List {
         column-gap: 24px;
+        @include pad {
+            column-gap: 12px;
+        }
     }
     &Item {
         a {
