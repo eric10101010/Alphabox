@@ -7,14 +7,25 @@
             color: #FFF;
             font-size: 64px;
             letter-spacing: 64px;
+            @include pad {
+                font-size: 48px;
+                letter-spacing: 48px;
+            }
         }
         h3 {
             visibility: hidden;
             font-size: 64px;
             letter-spacing: 64px;
+            @include pad {
+                font-size: 48px;
+                letter-spacing: 48px;
+            }
         }
         img {
             height: 196px;
+            @include pad {
+                height: 148px;
+            }
         }
     }
     &Top {
@@ -26,6 +37,9 @@
             border-radius: 24px;
             border: 1px solid #FFF;
             padding: 10px 0;
+            @include pad {
+                width: 55.99%;
+            }
             h4 {
                 margin-left: 10px;
             }
@@ -34,11 +48,18 @@
     &Center {
         &Box {
             width: 32.2535%;
+            @include pad {
+                //416px
+                width: 56.6%;
+            }
         }
     }
     &Bottom {
         &Form {
             width: 32.2535%;
+            @include pad {
+                width: 55.99%;
+            }
         }
     }
     &Btn {
