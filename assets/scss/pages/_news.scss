@@ -1,17 +1,53 @@
 .news {
     background: radial-gradient(50% 50% at 50% 50%, #28085C 0%, #000 100%);
+    padding-bottom: 120px;
     color: $white;
+    @include pad {
+        padding-bottom: 80px;
+    }
     h2 {
         font-size: 48px;
         padding-top: 160px;
         padding-bottom: 60px;
+        @include pad {
+            font-size: 40px;
+            padding-top: 80px;
+            padding-bottom: 40px;
+        }
     }
     &List {
         margin-bottom: 60px;
+        @include pad {
+            margin-bottom: 32px;
+        }
+        img {
+            width: 100%;
+            height: 228px;
+        }
     }
     &Item {
         h3 {
             font-size: 128px;
+            letter-spacing: 320px;
+        }
+    }
+    &Photo {
+        width: 16.692%;
+        @include pad {
+            width: 32.553%;
+        }
+        img {
+            height: 228px;
+            @include pad {
+                height: 276px;
+            }
+        }
+    }
+    &Page {
+        &Item {
+            a {
+                font-size: 24px;
+            }
         }
     }
 }

@@ -5,18 +5,49 @@
         font-size: 48px;
         padding-top: 160px;
         letter-spacing: 48px;
+        @include pad {
+            font-size: 40px;
+            letter-spacing: 40px;
+            padding-top: 80px;
+        }
+    }
+    &List {
+        @include pad {
+            display: flex;
+            justify-content: center;
+        }
     }
     &Content {
         h3 {
             font-size: 20px;
             letter-spacing: 20px;
+            @include pad {
+                font-size: 28px;
+                letter-spacing: 24px;
+            }
         }
         h4 {
             letter-spacing: 16px;
+            @include pad {
+                font-size: 20px;
+                letter-spacing: 20px;
+            }
+        }
+        p {
+            @include pad {
+                font-size: 20px;
+            }
         }
     }
     &Arrow {
         padding-bottom: 120px;
+
+        display: flex;
+        justify-content: flex-end;
+        @include pad {
+            justify-content: center;
+            padding-bottom: 60px;
+        }
         p {
             font-size: 14px;
             letter-spacing: 14px;

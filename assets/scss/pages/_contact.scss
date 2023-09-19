@@ -17,6 +17,7 @@
     }
     &Content {
         padding-top: 160px;
+        padding-bottom: 160px;
         display: flex;
         column-gap: 134px;
         @include pad {
