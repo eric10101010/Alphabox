@@ -101,6 +101,9 @@
       @include pad {
         height: 840px;
       }
+      @include mobile {
+        height: 520px;
+      }
     }
     &Title {
       padding-top: 192px;
@@ -115,6 +118,10 @@
           font-size: 28px;
           letter-spacing: 28px;
         }
+        @include mobile {
+          font-size: 18px;
+          letter-spacing: 18px;
+        }
       }
     }
     &Card {
@@ -128,12 +135,23 @@
       @include pad {
         background-image: url(../images/mobile/carousel_mobile.png);
       }
+      @include mobile {
+        height: 330px;
+      }
       h3 {
         font-size: 96px;
+        @include mobile {
+          font-size: 48px;
+        }
       }
       h4 {
         font-size: 32px;
         letter-spacing: 32px;
+        @include mobile {
+          font-size: 12px;
+          letter-spacing: 12px;
+        }
+
       }
     }
   }
@@ -144,6 +162,10 @@
       @include pad {
         padding-top: 80px;
       }
+      @include mobile {
+        text-align: center;
+        padding-top: 40px;
+      }
       h2 {
         font-size: 48px;
         letter-spacing: 48px;
@@ -151,6 +173,17 @@
           font-size: 36px;
           letter-spacing: 36px;
         }
+        @include mobile {
+          font-size: 32px;
+          letter-spacing: 32px;
+        }
+      }
+    }
+    &List {
+      @include mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
     }
     &Content {
@@ -165,6 +198,10 @@
     &Btn {
       margin-top: 76px;
       margin-bottom: 96px;
+      @include mobile {
+        margin-top: 38px;
+        margin-bottom: 48px;
+      }
       a {
         background-image: url(../images/circle-noDot.png);
         background-size: cover;
@@ -172,6 +209,18 @@
         width: 132px;
         background-repeat: no-repeat;
         color: #FFFFFF;
+        @include mobile {
+          width: 98px;
+          height: 98px;
+          font-size: 14px;
+        }
+      }
+    }
+    &Footer {
+      p {
+        @include mobile {
+          font-size: 14px;
+        }
       }
     }
   }
@@ -184,12 +233,20 @@
       @include pad {
         padding-top: 80px;
       }
+      @include mobile {
+        padding-top: 40px;
+      }
       h2 {
         font-size: 48px;
         letter-spacing: 48px;
         @include pad {
           font-size: 36px;
           letter-spacing: 36px;
+        }
+        @include mobile {
+          font-size: 32px;
+          letter-spacing: 32px;
+          padding-bottom: 8px;
         }
       }
     }
@@ -207,6 +264,12 @@
           line-height: 100px;
           bottom: -20px;
         }
+        @include mobile {
+          right: 150px;
+          font-size: 120px;
+          line-height: 60px;
+          bottom: -100px;
+        }
       }
     }
   }
@@ -216,6 +279,9 @@
     color: #FFF;
     @include pad {
       padding-bottom: 72px;
+    }
+    @include mobile {
+      padding-bottom: 54px;
     }
     &Dot {
       border-radius: 50%;
@@ -228,11 +294,18 @@
       @include pad {
         padding-top: 72px;
       }
+      @include mobile {
+        padding-top: 36px;
+      }
     }
     &Title {
       width: 25.455%;
       @include pad {
         width: 50%;
+        padding: 0 12px;
+      }
+      @include mobile {
+        width: 100%;
       }
       h2 {
         font-size: 48px;
@@ -245,6 +318,9 @@
       }
       span {
         font-size: 48px;
+        @include mobile {
+          font-size: 32px;
+        }
       }
     }
     &Line {
@@ -255,6 +331,9 @@
     }
     &Text {
       padding-top: 54px;
+      @include pad {
+        padding-top: 0;
+      }
     }
     &Btn {
       width: 416px;
@@ -275,14 +354,23 @@
       @include pad {
         height: 420px;
       }
+      @include mobile {
+        height: 240px;
+      }
       h2 {
         font-size: 400px;
         @include pad {
           font-size: 150px;
         }
+        @include mobile {
+          font-size: 100px;
+        }
       }
       h3 {
         font-size: 32px;
+        @include mobile {
+          font-size: 24px;
+        }
       }
       h4 {
         @include pad {
@@ -316,6 +404,9 @@
       @include pad {
         height: 420px;
       }
+      @include mobile {
+        height: 240px;
+      }
     }
     &Item2 {
       background: url(../images/felix_vertical.png) no-repeat 50% 0;
@@ -324,6 +415,9 @@
       width: 25%;
       @include pad {
         height: 420px;
+      }
+      @include mobile {
+        height: 240px;
       }
     }
     &Item3 {
@@ -334,6 +428,9 @@
       @include pad {
         height: 420px;
       }
+      @include mobile {
+        height: 240px;
+      }
     }
     &Item4 {
       background: url(../images/vito_vertical.png) no-repeat 50% 0;
@@ -342,6 +439,9 @@
       width: 25%;
       @include pad {
         height: 420px;
+      }
+      @include mobile {
+        height: 240px;
       }
     }
   }

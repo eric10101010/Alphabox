@@ -70,6 +70,12 @@
 }
 .swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal{
     width: 66.0495%;
+    @include pad {
+        width: 86%;
+    }
+    @include mobile {
+        width: 66%;
+    }
 }
 .fs-80 {
     font-size: 80px;
