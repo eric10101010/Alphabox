@@ -1,6 +1,9 @@
 .faq {
     color: red;
     padding-bottom: 120px;
+    @include pad {
+        padding-bottom: 80px;
+    }
     h2 {
         font-size: 48px;
         letter-spacing: 48px;

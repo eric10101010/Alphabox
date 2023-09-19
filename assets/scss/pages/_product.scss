@@ -5,11 +5,17 @@
             display: flex;
             column-gap: 24px;
             justify-content: center;
+            @include pad {
+                column-gap: 16px;
+            }
         }
         &Link {
             color: #FFF;
             font-size: 24px;
             padding: 4px 80px;
+            @include pad {
+                padding: 4px 40px;
+            }
         }
     }
     &Banner {
@@ -19,50 +25,77 @@
         &Photo {
             background-size: cover;
             height: 925px;
+            @include pad {
+                height: 425px;
+            }
             svg {
                 width: 80px;
                 height: 80px;
             }
         }
         &Back1 {
-            background: url(../images/diane_square1.png) no-repeat;
+            background: url(../images/diane_square1.png) no-repeat 50% 0%;
             background-size: cover;
             height: 925px;
+            @include pad {
+                height: 425px;
+            }
         }
         &Back2 {
-            background: url(../images/diane_square2.png) no-repeat;
+            background: url(../images/diane_square2.png) no-repeat 50% 0%;
             background-size: cover;
             height: 925px;
+            @include pad {
+                height: 425px;
+            }
         }
         &Back3 {
-            background: url(../images/felix_square1.png) no-repeat;
+            background: url(../images/felix_square1.png) no-repeat 50% 0%;
             background-size: cover;
             height: 925px;
+            @include pad {
+                height: 425px;
+            }
         }
         &Back4 {
-            background: url(../images/felix_square2.png) no-repeat;
+            background: url(../images/felix_square2.png) no-repeat 50% 0%;
             background-size: cover;
             height: 925px;
+            @include pad {
+                height: 425px;
+            }
         }
         &Back5 {
-            background: url(../images/karina_square1.png) no-repeat;
+            background: url(../images/karina_square1.png) no-repeat 50% 0%;
             background-size: cover;
             height: 925px;
+            @include pad {
+                height: 425px;
+            }
         }
         &Back6 {
-            background: url(../images/karina_square2.png) no-repeat;
+            background: url(../images/karina_square2.png) no-repeat 50% 0%;
             background-size: cover;
             height: 925px;
+            @include pad {
+                height: 425px;
+            }
         }
         &Back7 {
-            background: url(../images/vito_square1.png) no-repeat;
+            background: url(../images/vito_square1.png) no-repeat 50% 0%;
             background-size: cover;
             height: 925px;
+            @include pad {
+                height: 425px;
+            }
         }
         &Back8 {
-            background: url(../images/vito_square2.png) no-repeat;
+            background: url(../images/vito_square2.png) no-repeat 50% 0%;
             background-size: cover;
             height: 925px;
+            @include pad {
+                height: 425px;
+            }
         }
         &Text {
             width: 50%;
@@ -82,6 +115,10 @@
     &Intro {
         padding-top: 80px;
         padding-bottom: 120px;
+        @include pad {
+            padding-top: 40px;
+            padding-bottom: 60px;
+        }
         &Title {
             h3 {
                 font-size: 24px;
@@ -90,8 +127,14 @@
         }
         &Content {
             margin-top: 120px;
+            @include pad {
+                margin-top: 60px;
+            }
             &Item {
                 margin-bottom: 104px;
+                @include pad {
+                    margin-bottom: 52px;
+                }
             }
         }
     }
