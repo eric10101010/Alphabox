@@ -244,6 +244,9 @@
       }
       h4 {
         letter-spacing: 16px;
+        @include mobile {
+          letter-spacing: 0;
+        }
       }
     }
     &Btn {

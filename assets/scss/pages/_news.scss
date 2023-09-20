@@ -29,6 +29,10 @@
         h3 {
             font-size: 128px;
             letter-spacing: 320px;
+            @include mobile {
+                font-size: 36px;
+                letter-spacing: 36px;
+            }
         }
     }
     &Photo {
@@ -36,10 +40,17 @@
         @include pad {
             width: 32.553%;
         }
+        @include mobile {
+            width: 100%;
+        }
         img {
             height: 228px;
             @include pad {
                 height: 276px;
+            }
+            @include mobile {
+                height: 240px;
+                background-size: cover;
             }
         }
     }

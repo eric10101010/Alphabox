@@ -14,13 +14,18 @@
       <div class="container">
         <h2 class="fw-bold text-center">最新消息</h2>
         <ul class="newsList row d-flex justify-content-center align-items-end">
-          <li class="newsItem col-lg-1 col-md-12">
+          <li class="newsItem col-lg-1 col-md-12 col-12">
             <h3 class="text-lg-center text-md-end">1</h3>
           </li>
-          <li class="newsPhoto col-lg-2 col-md-5">
-            <img src="../assets/images/news/news.png" alt="news">
+          <li class="newsPhoto col-lg-2 col-md-5 col-12">
+            <figure class="d-lg-block d-md-block d-none">
+              <img src="../assets/images/news/news.png" alt="news">
+            </figure>
+            <figure class="d-lg-none d-md-none d-block">
+              <img src="../assets/images/mobile/news_in_mobile.png" alt="news">
+            </figure>
           </li>
-          <li class="indexNewsContent col-6 px-3">
+          <li class="indexNewsContent col-lg-6 col-md-6 col-12 px-3">
             <div class="d-flex border-top border-white pt-7 px-4">
               <span class="material-symbols-outlined me-3">
                 emergency
@@ -45,7 +50,7 @@
             </a>
           </li>
         </ul>
-        <ul class="newsList row d-flex justify-content-center align-items-end">
+        <!-- <ul class="newsList row d-flex justify-content-center align-items-end">
           <li class="newsItem col-lg-1 col-md-12">
             <h3 class="text-lg-center text-md-end">2</h3>
           </li>
@@ -187,7 +192,7 @@
               3
             </a>
           </li>
-        </ul>
+        </ul> -->
       </div>
     </section>
     <%- include('./layout/footer'); -%>
