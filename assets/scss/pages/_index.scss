@@ -5,12 +5,19 @@
     @include pad {
       height: 500px;
     }
+    @include mobile {
+      height: 360px;
+    }
     img {
       width: 196px;
       height: 196px;
       @include pad {
         width: 148px;
         height: 148px;
+      }
+      @include mobile {
+        width: 100px;
+        height: 100px;
       }
     }
     &Box {
@@ -29,12 +36,20 @@
       top: 36px;
       left: 50%;
       transform: translate(-50%, -50%);
+      @include mobile {
+        top: 18px;
+      }
       h2 {
         font-size: 32px;
         letter-spacing: 80px;
         @include pad {
           font-size: 24px;
-          letter-spacing: 30px;
+          letter-spacing: 24px;
+        }
+        @include mobile {
+          font-size: 14px;
+          letter-spacing: 14px;
+
         }
       }
       h3 {
@@ -43,15 +58,28 @@
           font-size: 14px;
           letter-spacing: 14px;
         }
+        @include mobile {
+          display: none;
+        }
       }
     }
     &Item {
       width: 23.6365%;
       background-size: cover;
       z-index: 100;
+      h3 {
+        @include mobile {
+          font-size: 12px;
+          text-align: center;
+        }
+      }
       h4 {
         font-size: 32px;
         color: #FFF;
+        @include mobile {
+          padding-top: 8px;
+          font-size: 20px;
+        }
       }
     }
     &Item1 {
@@ -60,12 +88,20 @@
       @include pad {
         height: 295px;
       }
+      @include mobile {
+        background: url(../images/mobile/diane_mobile.png) 50% 20%;
+        height: 200px;
+      }
     }
     &Item2 {
       background-image: url(../images/felix.png);
       height: 580px;
       @include pad {
         height: 215px;
+      }
+      @include mobile {
+        background: url(../images/mobile/felix_mobile.png) 50% 25%;
+        height: 165px;
       }
     }
     &Item3 {
@@ -74,12 +110,20 @@
       @include pad {
         height: 215px;
       }
+      @include mobile {
+        background: url(../images/mobile/karina_mobile.png) 35% 35%;
+        height: 165px;
+      }
     }
     &Item4 {
       background-image: url(../images/vito.png);
       height: 676px;
       @include pad {
         height: 295px;
+      }
+      @include mobile {
+        background: url(../images/mobile/vito_mobile.png) 50% 20%;
+        height: 200px;
       }
     }
     &Line {
@@ -102,7 +146,9 @@
         height: 840px;
       }
       @include mobile {
-        height: 520px;
+        height: 460px;
+        padding: 0 12px;
+
       }
     }
     &Title {
@@ -136,7 +182,7 @@
         background-image: url(../images/mobile/carousel_mobile.png);
       }
       @include mobile {
-        height: 330px;
+        height: 250px;
       }
       h3 {
         font-size: 96px;
@@ -148,10 +194,15 @@
         font-size: 32px;
         letter-spacing: 32px;
         @include mobile {
-          font-size: 12px;
-          letter-spacing: 12px;
+          font-size: 14px;
+          letter-spacing: 6px;
         }
-
+      }
+      p {
+        @include mobile {
+          font-size: 12px;
+          text-align: right;
+        }
       }
     }
   }

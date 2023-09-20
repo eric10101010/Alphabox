@@ -93,5 +93,8 @@
     @include pad {
         position: absolute;
     }
+    @include mobile {
+        top: 250px;
+    }
 }
 
