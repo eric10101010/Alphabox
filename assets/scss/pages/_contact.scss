@@ -5,6 +5,9 @@
         @include pad {
             padding-top: 80px;
         }
+        @include mobile {
+            padding-top: 40px;
+        }
         h2 {
             font-size: 64px;
             letter-spacing: 64px;
@@ -12,6 +15,10 @@
                 font-size: 48px;
                 letter-spacing: 48px;
                 text-align: center;
+            }
+            @include mobile {
+                font-size: 28px;
+                letter-spacing: 28px;
             }
         }
     }
@@ -24,6 +31,9 @@
             column-gap: 24px;
             padding-bottom: 80px;
         }
+        @include mobile {
+            padding-bottom: 60px;
+        }
         &Info {
             h4 {
                 color: rgba(255, 255, 255, 0.50);
@@ -32,14 +42,28 @@
     }
     &Bar {
         padding: 48px 0;
+        @include mobile {
+            padding: 24px 0;
+        }
+        &List {
+            @include mobile {
+                column-gap: 16px;
+            }
+        }
         &Item {
             padding-left: 73px;
+            @include mobile {
+                padding: 0;
+            }
         }
     }
     &Choose {
         padding-bottom: 120px;
         @include pad {
             padding-bottom: 60px;
+        }
+        @include mobile {
+            padding-bottom: 40px;
         }
         h2 {
             font-size: 64px;
@@ -50,11 +74,19 @@
                 letter-spacing: 42px;
                 padding-top: 80px;
             }
+            @include mobile {
+                font-size: 24px;
+                letter-spacing: 16px;
+                padding-top: 40px;
+            }
         }
         h3 {
             font-size: 48px;
             @include pad {
                 font-size: 32px;
+            }
+            @include mobile {
+                font-size: 20px;
             }
         }
         &Item {
@@ -63,9 +95,15 @@
             @include pad {
                 height: 168px;
             }
+            @include mobile {
+                height: 144px;
+            }
             h3 {
                 color: $white;
                 font-size: 64px;
+                @include mobile {
+                    font-size: 36px;
+                }
             }
         }
         &Item1 {
@@ -74,10 +112,16 @@
             @include pad {
                 background: url(../images/mobile/diane_choose.png) 100% 40% no-repeat;
             }
+            @include mobile {
+                background: url(../images/mobile/diane_choose.png) 80% 40% no-repeat;
+            }
             h3 {
                 padding-left: 312px;
                 @include pad {
                     padding-left: 55px;
+                }
+                @include mobile {
+                    padding-left: 24px;
                 }
             }
         }
@@ -87,10 +131,16 @@
             @include pad {
                 background: url(../images/mobile/felix_choose.png) 0% 40% no-repeat;
             }
+            @include pad {
+                background: url(../images/mobile/felix_choose.png) 35% 40% no-repeat;
+            }
             h3 {
                 padding-right: 311px;
                 @include pad {
                     padding-right: 55px;
+                }
+                @include mobile {
+                    padding-right: 24px;
                 }
             }
         }
@@ -100,10 +150,16 @@
             @include pad {
                 background: url(../images/mobile/karina_choose.png) 100% 50% no-repeat;
             }
+            @include mobile {
+                background: url(../images/mobile/karina_choose.png) 90% 50% no-repeat;
+            }
             h3 {
                 padding-left: 312px;
                 @include pad {
-                    padding-left: 55px;
+                    padding-left: 56px;
+                }
+                @include mobile {
+                    padding-left: 24px;
                 }
             }
         }
@@ -113,10 +169,16 @@
             @include pad {
                 background: url(../images/mobile/vito_choose.png) 0% 35% no-repeat;
             }
+            @include mobile {
+                background: url(../images/mobile/vito_choose.png) 40% 35% no-repeat;
+            }
             h3 {
                 padding-right: 315px;
                 @include pad {
                     padding-right: 56px;
+                }
+                @include mobile {
+                    padding-right: 24px;
                 }
             }
         }
