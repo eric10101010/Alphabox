@@ -1,8 +1,14 @@
 .login {
     background: radial-gradient(50% 50% at 50% 50%, #28085C 0%, #000 100%);
     padding-bottom: 160px;
+    @include mobile {
+        padding-bottom: 60px;
+    }
     &Title {
         padding-top: 60px;
+        @include mobile {
+            padding-top: 40px;
+        }
         h2 {
             color: #FFF;
             font-size: 64px;
@@ -10,6 +16,10 @@
             @include pad {
                 font-size: 48px;
                 letter-spacing: 48px;
+            }
+            @include mobile {
+                font-size: 28px;
+                letter-spacing: 28px;
             }
         }
         h3 {
@@ -20,11 +30,18 @@
                 font-size: 48px;
                 letter-spacing: 48px;
             }
+            @include mobile {
+                font-size: 28px;
+                letter-spacing: 28px;
+            }
         }
         img {
             height: 196px;
             @include pad {
                 height: 148px;
+            }
+            @include mobile {
+                height: 108px;
             }
         }
     }
@@ -40,6 +57,9 @@
             @include pad {
                 width: 55.99%;
             }
+            @include mobile {
+                width: 88%;
+            }
             h4 {
                 margin-left: 10px;
             }
@@ -52,6 +72,9 @@
                 //416px
                 width: 56.6%;
             }
+            @include mobile {
+                width: 88%;
+            }
         }
     }
     &Bottom {
@@ -59,6 +82,9 @@
             width: 32.2535%;
             @include pad {
                 width: 55.99%;
+            }
+            @include mobile {
+                width: 88%;
             }
         }
     }
@@ -70,4 +96,7 @@
 .register {
     background: radial-gradient(50% 50% at 50% 50%, #28085C 0%, #000 100%);
     padding-bottom: 160px;
+    @include mobile {
+        padding-bottom: 60px;
+    }
 }
