@@ -249,25 +249,33 @@
         }
       }
     }
-    &Btn {
-      margin-top: 76px;
-      margin-bottom: 96px;
+    &Icon {
+      position: absolute;
+      bottom: 202px;
       @include mobile {
-        margin-top: 38px;
-        margin-bottom: 48px;
+        bottom: 155px;
       }
       a {
-        background-image: url(../images/circle-noDot.png);
-        background-size: cover;
-        height: 132px;
-        width: 132px;
-        background-repeat: no-repeat;
-        color: #FFFFFF;
         @include mobile {
-          width: 98px;
-          height: 98px;
           font-size: 14px;
         }
+      }
+    }
+    &Btn {
+      margin: 0 auto;
+      margin-top: 76px;
+      margin-bottom: 96px;
+      background-image: url(../images/circle-noDot.png);
+      background-size: cover;
+      height: 132px;
+      width: 132px;
+      background-repeat: no-repeat;
+      @include mobile {
+        width: 98px;
+        height: 98px;
+        font-size: 14px;
+        margin-top: 38px;
+        margin-bottom: 48px;
       }
     }
     &Footer {

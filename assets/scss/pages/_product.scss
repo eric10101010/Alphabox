@@ -40,6 +40,51 @@
                 height: 80px;
             }
         }
+        &Icon {
+            position: absolute;
+            bottom: 133px;  
+            left: 50%;
+            transform: translate(-50%, 0%);
+            z-index: 101;
+            @include pad {
+                bottom: 53px;
+            }
+            @include mobile {
+                bottom: 40px;
+            }
+        }
+        &Btn {
+            position: absolute;
+            bottom: 60px;  
+            left: 50%;
+            transform: translate(-50%, 0%);
+            z-index: 101;
+            @include pad {
+                bottom: 30px;
+            }
+            @include mobile {
+                bottom: 20px;
+            }
+            a {
+                background-image: url(../images/circle-noDot.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 196px;
+                height: 196px;
+                animation: rotation 5s infinite linear;
+                @include pad {
+                    width: 78px;
+                    height: 78px;
+                }
+                @include mobile {
+                    width: 64px;
+                    height: 64px;
+                }
+            }
+            svg {
+                animation-play-state:paused;
+            }
+        }
         &Back1 {
             background: url(../images/diane_square1.png) no-repeat 50% 0%;
             background-size: cover;
