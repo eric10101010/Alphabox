@@ -1,3 +1,12 @@
+.CJK-TC {
+    font-family: 'Noto Sans TC';
+}
+.Shrikhand {
+    font-family: 'Shrikhand';
+}
+.Saira {
+    font-family:'Saira ExtraCondensed';
+}
 .common {
     &Card {
         background: radial-gradient(105.81% 105.81% at 50% 50%, #28085C 0%, #000 100%);
@@ -110,7 +119,6 @@
         }
     }
 }
-
 .swiperAbout {
     overflow-x: hidden;
     @include pad {

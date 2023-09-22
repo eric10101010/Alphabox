@@ -264,6 +264,9 @@
           letter-spacing: 0;
         }
       }
+      p{
+        font-weight: 350;
+      }
     }
     &Icon {
       position: absolute;
@@ -437,6 +440,7 @@
       }
       h2 {
         font-size: 400px;
+        font-weight: 300;
         @include pad {
           font-size: 150px;
         }
