@@ -38,6 +38,10 @@
   }
   &Item{
       padding: 0 20px;
+      @include mobile{
+        padding: 0 12px;
+        text-align: center;
+    }
       a{
           color: $white;
           font-size: 16px;
@@ -46,9 +50,7 @@
               font-size: $font-size-base;
           }
       }
-      @include mobile{
-          text-align: center;
-      }
+
   }
   &Link {
       font-size: $text-m;
