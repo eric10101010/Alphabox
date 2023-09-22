@@ -42,6 +42,10 @@
       h2 {
         font-size: 32px;
         letter-spacing: 80px;
+        @include pc {
+          font-size: 32px;
+          letter-spacing: 32px;
+        }
         @include pad {
           font-size: 24px;
           letter-spacing: 24px;
@@ -85,6 +89,9 @@
     &Item1 {
       background-image: url(../images/diane.png);
       height: 676px;
+      @include pc {
+        height: 620px;
+      }
       @include pad {
         height: 295px;
       }
@@ -96,6 +103,9 @@
     &Item2 {
       background-image: url(../images/felix.png);
       height: 580px;
+      @include pc {
+        height: 524px;
+      }
       @include pad {
         height: 215px;
       }
@@ -107,6 +117,9 @@
     &Item3 {
       background-image: url(../images/karina.png);
       height: 580px;
+      @include pc {
+        height: 524px;
+      }
       @include pad {
         height: 215px;
       }
@@ -118,6 +131,9 @@
     &Item4 {
       background-image: url(../images/vito.png);
       height: 676px;
+      @include pc {
+        height: 620px;
+      }
       @include pad {
         height: 295px;
       }
@@ -141,7 +157,7 @@
       background-image: url(../images/carousel_background.png);
       background-size: 50% 100%;
       background-repeat: no-repeat;
-      height: 1080px;
+      height: 1089px;
       @include pad {
         height: 840px;
       }
