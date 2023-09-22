@@ -197,6 +197,12 @@
             }
             &Item {
                 margin-bottom: 104px;
+                h3 {
+                    &:hover {
+                        border-bottom: 2px solid #000;
+                        transition: .2s;
+                    }
+                }
                 @include pad {
                     margin-bottom: 52px;
                 }
