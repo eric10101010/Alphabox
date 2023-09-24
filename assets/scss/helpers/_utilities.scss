@@ -147,14 +147,17 @@
         width: 66%;
     }
 }
-
-
 .swiper-button-next, .swiper-button-prev {
     color: #fff;
     position: initial;
     margin-top: 0;
     width: auto;
     height: auto;
+    svg {
+        &:hover {
+            fill: red;
+        }
+    }
     &::after {
         content: '';
     }
@@ -165,8 +168,6 @@
         top: 250px;
     }
 }
-
-
 .image_rotate {
     animation: rotation 5s infinite linear;
 }
