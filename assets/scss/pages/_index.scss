@@ -221,6 +221,9 @@
         }
       }
     }
+    &Arrow {
+      width: 10.228%;
+    }
   }
   &News {
     color: #FFFFFF;
@@ -339,14 +342,15 @@
         color: rgba(255, 255, 255, 0.04);
         position: relative;
         right: 300px;
-        bottom: -40px;
+        bottom: -85px;
         @include pad {
           font-size: 200px;
           line-height: 100px;
-          bottom: -20px;
+          bottom: -80px;
+          right: 150px;
         }
         @include mobile {
-          right: 150px;
+          right: 90px;
           font-size: 120px;
           line-height: 60px;
           bottom: -100px;
@@ -380,9 +384,8 @@
       }
     }
     &Title {
-      width: 25.455%;
+      // width: 25.455%;
       @include pad {
-        width: 50%;
         padding: 0 12px;
       }
       @include mobile {
@@ -413,7 +416,7 @@
     &Text {
       padding-top: 54px;
       @include pad {
-        padding-top: 0;
+        padding-top: 36px;
       }
     }
     &Btn {
