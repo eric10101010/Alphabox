@@ -27,9 +27,10 @@
             padding-bottom: 36px;
         }
         &Footer {
+            margin-top: 44px;
+            margin-bottom: 156px;
             p {
-                padding-top: 60px;
-                padding-bottom: 172px;
+                margin-left: 25px;
                 @include mobile {
                     padding-top: 30px;
                     padding-bottom: 86px;

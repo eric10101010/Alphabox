@@ -154,8 +154,10 @@
     width: auto;
     height: auto;
     svg {
+        fill: #D9D9D9;
         &:hover {
-            fill: red;
+            fill: #7000FF;
+            transition: .4s;
         }
     }
     &::after {

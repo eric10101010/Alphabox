@@ -183,8 +183,9 @@
         }
         &Title {
             h3 {
-                font-size: 24px;
+                font-size: 20px;
                 line-height: 24px;
+                font-weight: 500;
                 @include mobile {
                     font-size: 16px;
                     line-height: 16px;
@@ -202,6 +203,7 @@
             &Item {
                 margin-bottom: 104px;
                 h3 {
+                    font-weight: bolder;
                     cursor: pointer;
                     &:hover {
                         border-bottom: 2px solid #000;
