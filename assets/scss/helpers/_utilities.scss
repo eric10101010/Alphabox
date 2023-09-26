@@ -5,7 +5,7 @@
     font-family: 'Shrikhand';
 }
 .Saira {
-    font-family:'Saira ExtraCondensed';
+    font-family:'Saira Extra Condensed';
 }
 .common {
     &Card {
@@ -68,6 +68,153 @@
             border-radius: 50%;
         }
     }
+    &News {
+        color: #FFFFFF;
+        h2 {
+            font-size: 48px;
+            letter-spacing: 48px;
+            font-weight: 900;
+            padding-top: 160px;
+            padding-bottom: 60px;
+            @include pad {
+                font-size: 40px;
+                letter-spacing: 40px;
+                padding-top: 80px;
+            }
+            @include mobile {
+                font-size: 28px;
+                letter-spacing: 28px;
+                padding-top: 40px;
+                padding-bottom: 24px;
+            }
+        }
+        &Header {
+                padding-top: 160px;
+            @include pad {
+                padding-top: 80px;
+            }
+            @include mobile {
+                text-align: center;
+                padding-top: 40px;
+            }
+            h2 {
+                font-size: 48px;
+                letter-spacing: 48px;
+                @include pad {
+                    font-size: 36px;
+                    letter-spacing: 36px;
+                }
+                @include mobile {
+                    font-size: 32px;
+                    letter-spacing: 32px;
+                }
+            }
+        }
+        &List {
+            margin-bottom: 60px;
+            @include pad {
+                margin-bottom: 40px;
+            }
+            @include mobile {
+                margin-bottom: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        &Item {
+            h3 {
+                font-size: 128px;
+                letter-spacing: 320px;
+                font-weight: 350;
+                @include pad {
+                    font-size: 96px;
+                }
+                @include mobile {
+                    font-size: 64px;
+                }
+            }
+        }
+        &Content {
+            h3 {
+                font-size: 20px;
+                letter-spacing: 20px;
+                font-weight: 500;
+            }
+            h4 {
+                letter-spacing: 16px;
+                font-weight: 500;
+                @include mobile {
+                    letter-spacing: 0;
+                }
+            }
+            p{
+                font-weight: 350;
+            }
+        }
+        &Photo {
+            @include pad {
+                img {
+                    width: 100%;
+                    height: 276px;
+                }
+            }
+        }
+        &Icon {
+            position: absolute;
+            bottom: 202px;
+            @include mobile {
+                bottom: 155px;
+            }
+            a {
+                @include mobile {
+                    font-size: 14px;
+                }
+            }
+        }
+        &Btn {
+            margin: 0 auto;
+            margin-top: 76px;
+            margin-bottom: 96px;
+            background-image: url(../images/circle-noDot.png);
+            background-size: cover;
+            height: 132px;
+            width: 132px;
+            background-repeat: no-repeat;
+            @include mobile {
+            width: 98px;
+            height: 98px;
+            font-size: 14px;
+            margin-top: 38px;
+            margin-bottom: 48px;
+            }
+        }
+        &Footer {
+            p {
+                @include mobile {
+                    font-size: 14px;
+                }
+            }
+        }
+        &Border {
+            border-right: 1px solid #FFF;
+            @include mobile {
+                border-right: transparent;
+            }
+        }
+        &Page {
+            padding-bottom: 120px;
+            @include pad {
+                padding-bottom: 80px;
+            }
+            @include mobile {
+                padding-bottom: 40px;
+            }
+            a {
+                font-size: 24px;
+            }
+        }
+    }    
     &UnderBox1 {
         max-width: 1760px;
         margin: 0 auto;

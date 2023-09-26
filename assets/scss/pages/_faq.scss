@@ -8,12 +8,14 @@
         font-size: 48px;
         letter-spacing: 48px;
         border-bottom: 3px dotted $white;
+        font-weight: 900;
         @include mobile {
             font-size: 28px;
             letter-spacing: 28px;
         }
     }
     &List {
+        font-weight: 500;
         @include mobile {
             display: flex;
             flex-direction: column;
@@ -23,6 +25,9 @@
     }
     &Item {
         border-bottom: 2px dotted $white;
+        h3 {
+            font-weight: 500;
+        }
         &Body {
             p {
                 width: 78.713%;

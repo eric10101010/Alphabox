@@ -11,6 +11,7 @@
         h2 {
             font-size: 64px;
             letter-spacing: 64px;
+            font-weight: 900;
             @include pad {
                 font-size: 48px;
                 letter-spacing: 48px;
@@ -69,6 +70,7 @@
             font-size: 64px;
             letter-spacing: 64px;
             padding-top: 160px;
+            font-weight: 900;
             @include pad {
                 font-size: 42px;
                 letter-spacing: 42px;
@@ -82,6 +84,7 @@
         }
         h3 {
             font-size: 48px;
+            font-weight: 900;
             @include pad {
                 font-size: 32px;
             }
