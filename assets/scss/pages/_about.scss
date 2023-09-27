@@ -18,10 +18,17 @@
             background: url(../images/about_us.png) no-repeat;
             background-size: cover;
             height: 280px;
+            @include pad {
+                background: url(../images/mobile/about_us_mobile.png) 0% 100% no-repeat;
+                background-size: cover;
+                height: 360px;
+            }
             @include mobile {
                 background: url(../images/mobile/about_us_mobile.png) no-repeat;
                 background-size: cover;
+                height: 280px;
             }
+
         }
         &Text {
             padding-bottom: 36px;
@@ -29,17 +36,19 @@
         &Footer {
             margin-top: 44px;
             margin-bottom: 156px;
+            @include pad {
+                margin-bottom: 96px;
+            }
+            @include mobile {
+                margin-bottom: 64px;
+            }
             p {
                 margin-left: 25px;
-                @include mobile {
-                    padding-top: 30px;
-                    padding-bottom: 86px;
-                }
                 @include pad {
-                    padding-bottom: 86px;
-                    @include mobile {
-                        padding-bottom: 48px;
-                    }
+                    margin-left: 16px;
+                }
+                @include mobile {
+                    margin-left: 8px;
                 }
             }
         }

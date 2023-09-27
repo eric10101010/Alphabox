@@ -59,13 +59,9 @@
     &Arrow {
         padding-bottom: 120px;
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
         @include pad {
-            justify-content: center;
             padding-bottom: 60px;
-        }
-        @include mobile {
-            justify-content: space-between;
         }
         p {
             font-size: 14px;
