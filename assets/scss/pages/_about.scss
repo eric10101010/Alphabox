@@ -7,7 +7,6 @@
             font-size: 48px;
             @include pad {
                 padding-top: 100px;
-                font-size: 36px;
             }
             @include mobile {
                 padding-top: 50px;
@@ -66,6 +65,10 @@
             h2 {
                 font-size: 96px;
                 letter-spacing: 96px;
+                @include pc {
+                    font-size: 64px;
+                    letter-spacing: 64px;
+                }
                 @include pad {
                     font-size: 48px;
                     letter-spacing: 48px;

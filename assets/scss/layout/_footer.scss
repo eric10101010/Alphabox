@@ -16,6 +16,7 @@
         }
         p {
             letter-spacing: 1.6px;
+            font-weight: 500;
             @include pad {
                 font-size: 14px;
                 letter-spacing: 1.4px;
@@ -29,6 +30,7 @@
     }
     &Item {
         a {
+            font-weight: 350;
             color: #000000;
         }
     }
