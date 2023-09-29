@@ -17,6 +17,9 @@
             background: url(../images/about_us.png) no-repeat;
             background-size: cover;
             height: 280px;
+            @include pc {
+                background: url(../images/about_us.png) no-repeat 65% 80%;
+            }
             @include pad {
                 background: url(../images/mobile/about_us_mobile.png) 0% 100% no-repeat;
                 background-size: cover;
@@ -25,7 +28,7 @@
             @include mobile {
                 background: url(../images/mobile/about_us_mobile.png) no-repeat;
                 background-size: cover;
-                height: 280px;
+                height: 260px;
             }
 
         }
@@ -58,6 +61,12 @@
         &List {
             display: flex;
             column-gap: 40px;
+            @include pad {
+                column-gap: 24px;
+            }
+            @include mobile {
+                column-gap: 8px;
+            }
         }
         &Text {
             border-bottom: 12px solid #000;
@@ -66,8 +75,8 @@
                 font-size: 96px;
                 letter-spacing: 96px;
                 @include pc {
-                    font-size: 72px;
-                    letter-spacing: 72px;
+                    font-size: 64px;
+                    letter-spacing: 64px;
                 }
                 @include pad {
                     font-size: 48px;
@@ -77,6 +86,11 @@
                     font-size: 20px;
                     letter-spacing: 20px;
                 }
+            }
+        }
+        &Photo {
+            img {
+                width: 100%;
             }
         }
         &Left {
