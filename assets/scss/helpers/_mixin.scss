@@ -2,6 +2,7 @@ $pc:1640px;
 $pad:992px;
 $mobile:767px;
 
+$news:1125px;
 
 @mixin pc{
     @media (max-width:$pc) {
@@ -15,6 +16,11 @@ $mobile:767px;
 };
 @mixin mobile{
     @media (max-width:$mobile) {
+        @content
+    }
+};
+@mixin news{
+    @media (max-width:$news) {
         @content
     }
 };

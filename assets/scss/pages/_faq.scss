@@ -12,6 +12,7 @@
         @include mobile {
             font-size: 28px;
             letter-spacing: 28px;
+            margin-left: 20px;
         }
     }
     &List {
@@ -19,8 +20,9 @@
         @include mobile {
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
             margin-bottom: 32px;
+            margin-left: 20px;
         }
     }
     &Item {
