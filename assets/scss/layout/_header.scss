@@ -59,6 +59,14 @@
         transition: .4s;
       }
   }
+  &Login {
+    @include pad {
+      margin: 0 10px;
+    }
+    @include mobile {
+      margin: 0;
+    }
+  }
 }
 .hamburger {
   position: relative;
