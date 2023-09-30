@@ -8,6 +8,11 @@
     font-family:'Saira Extra Condensed';
 }
 .common {
+    &UnderBox {
+        max-width: 1760px;
+        margin: 0 auto;
+        margin-top: 88px;
+    }
     &Card {
         background: radial-gradient(105.81% 105.81% at 50% 50%, #28085C 0%, #000 100%);
         padding-top: 160px;
@@ -292,6 +297,7 @@
         }
     }
 }
+//Swiper
 .swiperAbout {
     overflow-x: hidden;
     @include pad {
@@ -299,7 +305,7 @@
     }
 }
 .swiper-scrollbar-drag {
-    background-color: $white;
+    background-color: $white
 }
 .swiper-scrollbar {
     width: 68%;
@@ -343,10 +349,10 @@
         top: 250px;
     }
 }
+//Rotate animation
 .imageRotate {
     animation: rotation 5s infinite linear;
 }
-
 @keyframes rotation {
     from {
         transform: rotate(0deg);
@@ -354,10 +360,4 @@
     to {
         transform: rotate(359deg);
     }
-}
-
-.commonUnderBox {
-    max-width: 1760px;
-    margin: 0 auto;
-    margin-top: 88px;
 }
